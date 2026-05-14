@@ -1,0 +1,30 @@
+name: sync-oss.yml
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'market.json'
+
+jobs:
+  upload-to-oss:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. 拉取你仓库的最新代码
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. 下载并安装阿里云官方的 ossutil 工具
+      - name: Setup Aliyun OSSUTIL
+        run: |
+          wget https://gosspublic.alicdn.com/ossutil/1.7.14/ossutil64
+          chmod 755 ossutil64
+          sudo mv ossutil64 /usr/local/bin/ossutil
+
+      # 3. 使用你刚才配置的 4 个 Secret 登录并上传文件
+      - name: Upload games.json to OSS
+        run: |
+          # 配置密钥
+          ossutil config -e ${{ secrets.OSS_ENDPOINT }} -i ${{ secrets.OSS_ACCESS_KEY_ID }} -k ${{ secrets.OSS_ACCESS_KEY_SECRET }} -L ch
+          # 执行强制覆盖上传 (-f 代表强制覆盖)
+          ossutil cp -f market.json oss://${{ secrets.OSS_BUCKET }}/market.json
