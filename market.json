@@ -37,6 +37,36 @@
       ]
     },
     {
+      "id": "com.bz.birdfly",
+      "name": "Bird Fly",
+      "author": "BZ-Games Team",
+      "type": "singlemultiple",
+      "summary": "飞鸟穿越障碍的街机游戏，支持动态天气、单人飞行与双人对战。",
+      "tags": [
+        "街机",
+        "飞行",
+        "双人"
+      ],
+      "iconUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/Bird%20Fly/icon.png",
+      "coverUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/Bird%20Fly/cover.png",
+      "featured": true,
+      "visibility": "public",
+      "minPlayers": 2,
+      "maxPlayers": 2,
+      "latestVersion": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "description": "一款飞鸟穿越障碍的街机游戏，支持动态天气系统、单人飞行与双人实时对战。",
+          "platformVersion": ">=1.9.4",
+          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/Bird%20Fly/v1.0.0/bird_fly.zip",
+          "sha256": "b1cad779eb4e2937126e48a9f8a502d475859ea18e0ab9b21513641605494a64",
+          "size": 54992646,
+          "publishedAt": "2026-05-15T12:00:00.000Z"
+        }
+      ]
+    },
+    {
       "id": "com.bz.whackamole",
       "name": "打地鼠",
       "author": "BZ-Games Team",
@@ -47,8 +77,8 @@
         "反应",
         "联机"
       ],
-      "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/打地鼠/icon.png",
-      "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/打地鼠/cover.png",
+      "iconUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%89%93%E5%9C%B0%E9%BC%A0/icon.png",
+      "coverUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%89%93%E5%9C%B0%E9%BC%A0/cover.png",
       "featured": false,
       "visibility": "public",
       "minPlayers": 2,
@@ -59,9 +89,9 @@
           "version": "1.0.0",
           "description": "经典打地鼠游戏 - 多种模式，联机对战支持",
           "platformVersion": ">=1.6.0",
-          "downloadUrl": "https://github.com/baozha2023/bz-games-market/releases/download/com.bz.whackamole-1.0.0/com.bz.whackamole-1.0.0.zip",
-          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-          "size": 0,
+          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%89%93%E5%9C%B0%E9%BC%A0/v1.0.0/%E6%89%93%E5%9C%B0%E9%BC%A0.zip",
+          "sha256": "e18964582f272ffbf1518e2bd6aaedaea12001bcd2a59e58940593a6a0b1502e",
+          "size": 28970023,
           "publishedAt": "2026-05-15T12:00:00.000Z"
         }
       ]
@@ -77,8 +107,8 @@
         "卡牌",
         "联机"
       ],
-      "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/斗地主/icon.png",
-      "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/斗地主/cover.png",
+      "iconUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%96%97%E5%9C%B0%E4%B8%BB/icon.png",
+      "coverUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%96%97%E5%9C%B0%E4%B8%BB/cover.png",
       "featured": true,
       "visibility": "public",
       "minPlayers": 2,
@@ -87,11 +117,11 @@
       "versions": [
         {
           "version": "1.0.0",
-          "description": "正式发布版本。经典斗地主扑克游戏 - 支持3人联机对战！",
+          "description": "经典斗地主扑克游戏 - 支持3人联机对战！",
           "platformVersion": ">=1.2.0",
-          "downloadUrl": "https://github.com/baozha2023/bz-games-market/releases/download/com.bz.landlord-1.0.0/com.bz.landlord-1.0.0.zip",
-          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-          "size": 0,
+          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%96%97%E5%9C%B0%E4%B8%BB/v1.0.0/%E6%96%97%E5%9C%B0%E4%B8%BB.zip",
+          "sha256": "32d41811d8abfe6199e5572c6dac0867e0415db6920f3db42159dfd9be37471b",
+          "size": 7414213,
           "publishedAt": "2026-05-15T12:00:00.000Z"
         }
       ]
@@ -438,36 +468,6 @@
           "description": "正式发布版本。经典中国象棋游戏，红黑双方对战，策略与智慧的较量",
           "platformVersion": ">=1.4.0",
           "downloadUrl": "https://github.com/baozha2023/bz-games-market/releases/download/com.bz.xiangqi-1.0.0/com.bz.xiangqi-1.0.0.zip",
-          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-          "size": 0,
-          "publishedAt": "2026-05-15T12:00:00.000Z"
-        }
-      ]
-    },
-    {
-      "id": "com.bz.birdfly",
-      "name": "Bird Fly",
-      "author": "BZ-Games Team",
-      "type": "singlemultiple",
-      "summary": "飞鸟穿越障碍的街机游戏，支持动态天气、单人飞行与双人对战。",
-      "tags": [
-        "街机",
-        "飞行",
-        "双人"
-      ],
-      "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/bird_fly/assets/images/icon.png",
-      "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/bird_fly/assets/images/cover.png",
-      "featured": true,
-      "visibility": "public",
-      "minPlayers": 2,
-      "maxPlayers": 2,
-      "latestVersion": "1.0.0",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "description": "正式发布版本。一款飞鸟穿越障碍的街机游戏，支持动态天气系统、单人飞行与双人实时对战。",
-          "platformVersion": ">=1.9.4",
-          "downloadUrl": "https://github.com/baozha2023/bz-games-market/releases/download/com.bz.birdfly-1.0.0/com.bz.birdfly-1.0.0.zip",
           "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
           "size": 0,
           "publishedAt": "2026-05-15T12:00:00.000Z"
