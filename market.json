@@ -19,19 +19,19 @@
         "数字",
         "单人"
       ],
-      "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/2048/icon.png",
-      "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/2048/cover.png",
+      "iconUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/2048/icon.png",
+      "coverUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/2048/cover.png",
       "featured": true,
       "visibility": "public",
       "latestVersion": "1.0.0",
       "versions": [
         {
           "version": "1.0.0",
-          "description": "正式发布版本。经典 2048 数字益智游戏 - 合并相同数字，合成 2048！",
+          "description": "经典 2048 数字益智游戏 - 合并相同数字，合成 2048！",
           "platformVersion": ">=1.0.0",
-          "downloadUrl": "https://github.com/baozha2023/bz-games-market/releases/download/com.bz.2048-1.0.0/com.bz.2048-1.0.0.zip",
-          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-          "size": 0,
+          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/2048/v1.0.0/2048.zip",
+          "sha256": "b8111136a43e2deaff137bcb1b095205c5788096f69800230fdc695061ef78e0",
+          "size": 1100914,
           "publishedAt": "2026-05-15T12:00:00.000Z"
         }
       ]
@@ -41,7 +41,7 @@
       "name": "打地鼠",
       "author": "BZ-Games Team",
       "type": "singlemultiple",
-      "summary": "经典打地鼠玩法，支持多种模式、WebGL 渲染与联机对战。",
+      "summary": "经典打地鼠玩法，支持多种模式与联机对战。",
       "tags": [
         "休闲",
         "反应",
@@ -57,7 +57,7 @@
       "versions": [
         {
           "version": "1.0.0",
-          "description": "正式发布版本。经典打地鼠游戏 - 多种模式，WebGL 渲染，联机对战支持",
+          "description": "经典打地鼠游戏 - 多种模式，联机对战支持",
           "platformVersion": ">=1.6.0",
           "downloadUrl": "https://github.com/baozha2023/bz-games-market/releases/download/com.bz.whackamole-1.0.0/com.bz.whackamole-1.0.0.zip",
           "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
