@@ -186,7 +186,7 @@
       "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/井字棋/icon.png",
       "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/井字棋/cover.png",
       "featured": false,
-      "visibility": "public",
+      "visibility": "hidden",
       "minPlayers": 2,
       "maxPlayers": 2,
       "latestVersion": "1.0.0",
@@ -216,7 +216,7 @@
       "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/荣耀领主：破城者/icon.png",
       "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/荣耀领主：破城者/cover.png",
       "featured": true,
-      "visibility": "public",
+      "visibility": "hidden",
       "minPlayers": 2,
       "maxPlayers": 2,
       "latestVersion": "1.0.0",
@@ -246,7 +246,7 @@
       "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/扫雷/icon.png",
       "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/扫雷/cover.png",
       "featured": false,
-      "visibility": "public",
+      "visibility": "hidden",
       "latestVersion": "1.0.0",
       "versions": [
         {
@@ -274,7 +274,7 @@
       "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/水果忍者/icon.png",
       "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/水果忍者/cover.png",
       "featured": true,
-      "visibility": "public",
+      "visibility": "hidden",
       "latestVersion": "3.0.0",
       "versions": [
         {
@@ -302,7 +302,7 @@
       "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/四子棋/icon.png",
       "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/四子棋/cover.png",
       "featured": false,
-      "visibility": "public",
+      "visibility": "hidden",
       "minPlayers": 2,
       "maxPlayers": 2,
       "latestVersion": "1.0.0",
@@ -332,7 +332,7 @@
       "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/坦克大战/icon.png",
       "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/坦克大战/cover.png",
       "featured": true,
-      "visibility": "public",
+      "visibility": "hidden",
       "minPlayers": 1,
       "maxPlayers": 5,
       "latestVersion": "2.0.0",
@@ -362,7 +362,7 @@
       "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/推箱子/assets/images/icon.png",
       "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/推箱子/assets/images/cover.png",
       "featured": false,
-      "visibility": "public",
+      "visibility": "hidden",
       "latestVersion": "1.0.0",
       "versions": [
         {
@@ -390,7 +390,7 @@
       "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/五子棋/icon.png",
       "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/五子棋/cover.png",
       "featured": false,
-      "visibility": "public",
+      "visibility": "hidden",
       "minPlayers": 2,
       "maxPlayers": 2,
       "latestVersion": "1.0.0",
@@ -420,7 +420,7 @@
       "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/五子棋单机版/icon.png",
       "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/五子棋单机版/cover.png",
       "featured": false,
-      "visibility": "public",
+      "visibility": "hidden",
       "latestVersion": "2.0.0",
       "versions": [
         {
@@ -448,7 +448,7 @@
       "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/消消乐/assets/images/backgrounds/icon.png",
       "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/消消乐/assets/images/backgrounds/cover.png",
       "featured": true,
-      "visibility": "public",
+      "visibility": "hidden",
       "latestVersion": "1.0.0",
       "versions": [
         {
@@ -476,7 +476,7 @@
       "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/中国象棋/icon.png",
       "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/中国象棋/cover.png",
       "featured": false,
-      "visibility": "public",
+      "visibility": "deprecated",
       "minPlayers": 2,
       "maxPlayers": 2,
       "latestVersion": "1.0.0",
