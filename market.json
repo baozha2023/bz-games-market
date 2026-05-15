@@ -97,6 +97,34 @@
       ]
     },
     {
+      "id": "com.wwhdsone.long",
+      "name": "大海世界",
+      "author": "WwhdsOne",
+      "type": "networkgame",
+      "summary": "点就完事了！",
+      "tags": [
+        "休闲",
+        "网页",
+        "点击"
+      ],
+      "iconUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E5%A4%A7%E6%B5%B7%E4%B8%96%E7%95%8C/icon.png",
+      "coverUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E5%A4%A7%E6%B5%B7%E4%B8%96%E7%95%8C/cover.png",
+      "featured": false,
+      "visibility": "public",
+      "latestVersion": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "description": "大海世界 — 点就完事了！",
+          "platformVersion": ">=1.9.4",
+          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E5%A4%A7%E6%B5%B7%E4%B8%96%E7%95%8C/v1.0.0/%E5%A4%A7%E6%B5%B7%E4%B8%96%E7%95%8C.zip",
+          "sha256": "19b07d7a9906cc13358825e0b306fbd4a195185e642e42d95a30cdf42d0ec542",
+          "size": 7175281,
+          "publishedAt": "2026-05-15T12:00:00.000Z"
+        }
+      ]
+    },
+    {
       "id": "com.bz.landlord",
       "name": "斗地主",
       "author": "BZ-Games Team",
