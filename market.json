@@ -2,7 +2,7 @@
   "schemaVersion": "1.0.0",
   "marketId": "official",
   "marketName": "BZ Games Market",
-  "generatedAt": "2026-05-15T12:00:00.000Z",
+  "generatedAt": "2026-05-15T11:38:46.822Z",
   "source": {
     "repository": "https://github.com/baozha2023/bz-games-market.git",
     "branch": "master"
@@ -271,19 +271,19 @@
         "经典",
         "单人"
       ],
-      "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/扫雷/icon.png",
-      "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/扫雷/cover.png",
+      "iconUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%89%AB%E9%9B%B7/icon.png",
+      "coverUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%89%AB%E9%9B%B7/cover.png",
       "featured": false,
-      "visibility": "hidden",
+      "visibility": "public",
       "latestVersion": "1.0.0",
       "versions": [
         {
           "version": "1.0.0",
-          "description": "正式发布版本。经典扫雷游戏 - 揭开格子，避开地雷，考验你的逻辑推理能力！",
+          "description": "经典扫雷游戏 - 揭开格子，避开地雷，考验你的逻辑推理能力！",
           "platformVersion": ">=1.2.0",
-          "downloadUrl": "https://github.com/baozha2023/bz-games-market/releases/download/com.bz.minesweeper-1.0.0/com.bz.minesweeper-1.0.0.zip",
-          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-          "size": 0,
+          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%89%AB%E9%9B%B7/v1.0.0/%E6%89%AB%E9%9B%B7.zip",
+          "sha256": "87de5f1730771e2fca5e7f461e35953e73321baf34f4662b1905e5374ac6ab99",
+          "size": 1583128,
           "publishedAt": "2026-05-15T12:00:00.000Z"
         }
       ]
