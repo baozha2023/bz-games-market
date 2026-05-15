@@ -183,21 +183,21 @@
         "双人",
         "联机"
       ],
-      "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/井字棋/icon.png",
-      "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/井字棋/cover.png",
+      "iconUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E4%BA%95%E5%AD%97%E6%A3%8B/icon.png",
+      "coverUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E4%BA%95%E5%AD%97%E6%A3%8B/cover.png",
       "featured": false,
-      "visibility": "hidden",
+      "visibility": "public",
       "minPlayers": 2,
       "maxPlayers": 2,
       "latestVersion": "1.0.0",
       "versions": [
         {
           "version": "1.0.0",
-          "description": "正式发布版本。经典井字棋游戏",
-          "platformVersion": ">=1.0.0",
-          "downloadUrl": "https://github.com/baozha2023/bz-games-market/releases/download/com.bz.tictactoe-1.0.0/com.bz.tictactoe-1.0.0.zip",
-          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-          "size": 0,
+          "description": "经典井字棋游戏",
+          "platformVersion": ">=1.2.0",
+          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E4%BA%95%E5%AD%97%E6%A3%8B/v1.0.0/%E4%BA%95%E5%AD%97%E6%A3%8B.zip",
+          "sha256": "60ac34e2391c7d9d60a2b848be0ce64cbd226b458f4950b1aad87c3f48f2cc67",
+          "size": 1401041,
           "publishedAt": "2026-05-15T12:00:00.000Z"
         }
       ]
@@ -213,21 +213,21 @@
         "策略",
         "联机"
       ],
-      "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/荣耀领主：破城者/icon.png",
-      "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/荣耀领主：破城者/cover.png",
+      "iconUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85/icon.png",
+      "coverUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85/cover.png",
       "featured": true,
-      "visibility": "hidden",
+      "visibility": "public",
       "minPlayers": 2,
       "maxPlayers": 2,
       "latestVersion": "1.0.0",
       "versions": [
         {
           "version": "1.0.0",
-          "description": "正式发布版本。卡牌对战游戏，玩法参考皇室战争。双方各有3座塔，消耗圣水打出手牌部署兵种/建筑/法术，摧毁对方国王塔即获胜。",
-          "platformVersion": ">=1.0.0",
-          "downloadUrl": "https://github.com/baozha2023/bz-games-market/releases/download/com.bzgames.lord-of-glory-breaker-1.0.0/com.bzgames.lord-of-glory-breaker-1.0.0.zip",
-          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-          "size": 0,
+          "description": "卡牌对战游戏，玩法参考皇室战争。双方各有3座塔，消耗圣水打出手牌部署兵种/建筑/法术，摧毁对方国王塔即获胜。",
+          "platformVersion": ">=1.8.0",
+          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85/v1.0.0/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85.zip",
+          "sha256": "ee42fc1a28d27fa1cccdf91f09d7458453f24db7bbbe8673ca879d64f3fb13ae",
+          "size": 134308488,
           "publishedAt": "2026-05-15T12:00:00.000Z"
         }
       ]
@@ -476,7 +476,7 @@
       "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/中国象棋/icon.png",
       "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/中国象棋/cover.png",
       "featured": false,
-      "visibility": "deprecated",
+      "visibility": "hidden",
       "minPlayers": 2,
       "maxPlayers": 2,
       "latestVersion": "1.0.0",
