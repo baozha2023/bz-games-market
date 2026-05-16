@@ -2,7 +2,7 @@
   "schemaVersion": "1.0.0",
   "marketId": "official",
   "marketName": "BZ Games Market",
-  "generatedAt": "2026-05-15T11:38:46.822Z",
+  "generatedAt": "2026-05-16T14:57:41.000Z",
   "source": {
     "repository": "https://github.com/baozha2023/bz-games-market.git",
     "branch": "master"
@@ -375,22 +375,31 @@
         "对战",
         "多人"
       ],
-      "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/坦克大战/icon.png",
-      "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/坦克大战/cover.png",
+      "iconUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98/icon.png",
+      "coverUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98/cover.png",
       "featured": true,
-      "visibility": "hidden",
+      "visibility": "public",
       "minPlayers": 1,
       "maxPlayers": 5,
       "latestVersion": "2.0.0",
       "versions": [
         {
-          "version": "2.0.0",
-          "description": "正式发布版本。多人在线坦克大战，支持大厅、地图投票与战斗结算流程",
+          "version": "1.0.0",
+          "description": "多人在线坦克大战，支持大厅、地图投票与战斗结算流程",
           "platformVersion": ">=1.5.0",
-          "downloadUrl": "https://github.com/baozha2023/bz-games-market/releases/download/com.bz.tankbattle-2.0.0/com.bz.tankbattle-2.0.0.zip",
-          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-          "size": 0,
-          "publishedAt": "2026-05-15T12:00:00.000Z"
+          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98/v1.0.0/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98.zip",
+          "sha256": "50e6d210640a841388b843b1187fd9da2f4c2c29584bf63354309c40c3be9a24",
+          "size": 58799114,
+          "publishedAt": "2026-05-16T14:47:31.000Z"
+        },
+        {
+          "version": "2.0.0",
+          "description": "多人在线坦克大战，支持大厅、地图投票与战斗结算流程",
+          "platformVersion": ">=1.5.0",
+          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98/v2.0.0/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98.zip",
+          "sha256": "03893d525b9f2aa3330d223a8051b910c1299bf08677b1e4ac7f69870cd4d40b",
+          "size": 77348745,
+          "publishedAt": "2026-05-16T14:57:41.000Z"
         }
       ]
     },
