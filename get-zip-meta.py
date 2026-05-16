@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import json
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 
@@ -37,9 +38,13 @@ def main() -> None:
         "sha256": sha256_of_file(zip_path),
         "size": zip_path.stat().st_size,
     }
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
 
     print("\n结果：")
     print(json.dumps(result, ensure_ascii=False, indent=2))
+
+    print("\n当前时间（ISO 8601）：")
+    print(f"  {now}")
 
     print("\n可直接粘贴到 market.json 的字段：")
     print(
@@ -47,6 +52,7 @@ def main() -> None:
             {
                 "sha256": result["sha256"],
                 "size": result["size"],
+                "publishedAt": now,
             },
             ensure_ascii=False,
             indent=2,

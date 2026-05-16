@@ -299,20 +299,38 @@
         "动作",
         "单人"
       ],
-      "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/水果忍者/icon.png",
-      "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/水果忍者/cover.png",
+      "iconUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85/icon.png",
+      "coverUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85/cover.png",
       "featured": true,
-      "visibility": "hidden",
+      "visibility": "public",
       "latestVersion": "3.0.0",
       "versions": [
         {
+          "version": "1.0.0",
+          "description": "经典切水果游戏 - 新增难度、刀光皮肤等多种新功能！",
+          "platformVersion": ">=1.1.0",
+          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85/v1.0.0/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85.zip",
+          "sha256": "6c79abbb91a0b491d871c262b395ee7f82bc6e683ce6458dba7e57717f4c92aa",
+          "size": 10735120,
+          "publishedAt": "2026-05-16T14:30:34.000Z"
+        },
+        {
+          "version": "2.0.0",
+          "description": "经典切水果游戏 - 三种付费刀光全新特效震撼来袭！",
+          "platformVersion": ">=1.2.0",
+          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85/v2.0.0/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85.zip",
+          "sha256": "236fd294ba30d904afaad1b5a660056a5fc27b3dccba58d3ef95d9839ed00559",
+          "size": 10768706,
+          "publishedAt": "2026-05-16T14:33:39.000Z"
+        },
+        {
           "version": "3.0.0",
-          "description": "正式发布版本。经典切水果游戏 -全新游戏界面！生存模式来袭！更炫酷刀光！",
+          "description": "经典切水果游戏 -全新游戏界面！生存模式来袭！更炫酷刀光！",
           "platformVersion": ">=1.4.0",
-          "downloadUrl": "https://github.com/baozha2023/bz-games-market/releases/download/com.bz.fruitninja-3.0.0/com.bz.fruitninja-3.0.0.zip",
-          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-          "size": 0,
-          "publishedAt": "2026-05-15T12:00:00.000Z"
+          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85/v3.0.0/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85.zip",
+          "sha256": "156cd8fa6177de27995256a8eae9597d03a893cc0cf8e17a6548b4832e7f153a",
+          "size": 21048745,
+          "publishedAt": "2026-05-16T14:38:36.000Z"
         }
       ]
     },
