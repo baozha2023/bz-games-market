@@ -97,11 +97,6 @@ def main() -> None:
         )
     )
 
-    print("\nCDN 地址预览：")
-    print(f"  iconUrl:     {icon_url}")
-    print(f"  coverUrl:    {cover_url}")
-    print(f"  downloadUrl: {download_url}")
-
 
 if __name__ == "__main__":
     main()
