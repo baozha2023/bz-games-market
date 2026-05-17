@@ -305,36 +305,6 @@
       ]
     },
     {
-      "id": "com.bz.whackamole",
-      "name": "打地鼠",
-      "author": "BZ-Games Team",
-      "type": "singlemultiple",
-      "summary": "经典打地鼠玩法，支持多种模式与联机对战。",
-      "tags": [
-        "休闲",
-        "反应",
-        "联机"
-      ],
-      "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%93%E5%9C%B0%E9%BC%A0/icon.png",
-      "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%93%E5%9C%B0%E9%BC%A0/cover.png",
-      "featured": false,
-      "visibility": "hidden",
-      "minPlayers": 2,
-      "maxPlayers": 2,
-      "latestVersion": "1.0.0",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "description": "经典打地鼠游戏 - 多种模式，联机对战支持",
-          "platformVersion": ">=1.6.0",
-          "downloadUrl": "http://123.com",
-          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-          "size": 0,
-          "publishedAt": "2026-05-15T12:00:00.000Z"
-        }
-      ]
-    },
-    {
       "id": "com.bz.connectfour",
       "name": "四子棋",
       "author": "BZ-Games Team",
@@ -414,20 +384,20 @@
         "闯关",
         "单人"
       ],
-      "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/推箱子/assets/images/icon.png",
-      "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/推箱子/assets/images/cover.png",
+      "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E6%8E%A8%E7%AE%B1%E5%AD%90/icon.png",
+      "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E6%8E%A8%E7%AE%B1%E5%AD%90/cover.png",
       "featured": false,
-      "visibility": "hidden",
+      "visibility": "public",
       "latestVersion": "1.0.0",
       "versions": [
         {
           "version": "1.0.0",
-          "description": "正式发布版本。经典推箱子游戏 - 将所有箱子推到目标位置，考验你的空间思维能力！",
+          "description": "经典推箱子游戏 - 将所有箱子推到目标位置，考验你的空间思维能力！",
           "platformVersion": ">=1.4.0",
-          "downloadUrl": "https://github.com/baozha2023/bz-games-market/releases/download/com.bz.sokoban-1.0.0/com.bz.sokoban-1.0.0.zip",
-          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-          "size": 0,
-          "publishedAt": "2026-05-15T12:00:00.000Z"
+          "sha256": "d07433b4a19c04610211cbbc69b3fe367656a1bc4c67628a452d3edc5643c3ac",
+          "size": 1988578,
+          "publishedAt": "2026-05-17T08:14:57.000Z",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E6%8E%A8%E7%AE%B1%E5%AD%90/v1.0.0/%E6%8E%A8%E7%AE%B1%E5%AD%90.zip"
         }
       ]
     },
@@ -541,6 +511,36 @@
           "description": "正式发布版本。经典中国象棋游戏，红黑双方对战，策略与智慧的较量",
           "platformVersion": ">=1.4.0",
           "downloadUrl": "https://github.com/baozha2023/bz-games-market/releases/download/com.bz.xiangqi-1.0.0/com.bz.xiangqi-1.0.0.zip",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "size": 0,
+          "publishedAt": "2026-05-15T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "com.bz.whackamole",
+      "name": "打地鼠",
+      "author": "BZ-Games Team",
+      "type": "singlemultiple",
+      "summary": "经典打地鼠玩法，支持多种模式与联机对战。",
+      "tags": [
+        "休闲",
+        "反应",
+        "联机"
+      ],
+      "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%93%E5%9C%B0%E9%BC%A0/icon.png",
+      "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%93%E5%9C%B0%E9%BC%A0/cover.png",
+      "featured": false,
+      "visibility": "hidden",
+      "minPlayers": 2,
+      "maxPlayers": 2,
+      "latestVersion": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "description": "经典打地鼠游戏 - 多种模式，联机对战支持",
+          "platformVersion": ">=1.6.0",
+          "downloadUrl": "http://123.com",
           "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
           "size": 0,
           "publishedAt": "2026-05-15T12:00:00.000Z"
