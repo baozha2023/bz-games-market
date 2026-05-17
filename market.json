@@ -19,8 +19,8 @@
         "数字",
         "单人"
       ],
-      "iconUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/2048/icon.png",
-      "coverUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/2048/cover.png",
+      "iconUrl": "http://cdn.bzgames.top/bz-games-market/2048/icon.png",
+      "coverUrl": "http://cdn.bzgames.top/bz-games-market/2048/cover.png",
       "featured": true,
       "visibility": "public",
       "latestVersion": "1.0.0",
@@ -29,7 +29,7 @@
           "version": "1.0.0",
           "description": "经典 2048 数字益智游戏 - 合并相同数字，合成 2048！",
           "platformVersion": ">=1.0.0",
-          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/2048/v1.0.0/2048.zip",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/2048/v1.0.0/2048.zip",
           "sha256": "b8111136a43e2deaff137bcb1b095205c5788096f69800230fdc695061ef78e0",
           "size": 1100914,
           "publishedAt": "2026-05-15T12:00:00.000Z"
@@ -47,8 +47,8 @@
         "飞行",
         "双人"
       ],
-      "iconUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/Bird%20Fly/icon.png",
-      "coverUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/Bird%20Fly/cover.png",
+      "iconUrl": "http://cdn.bzgames.top/bz-games-market/Bird%20Fly/icon.png",
+      "coverUrl": "http://cdn.bzgames.top/bz-games-market/Bird%20Fly/cover.png",
       "featured": true,
       "visibility": "public",
       "minPlayers": 2,
@@ -59,7 +59,7 @@
           "version": "1.0.0",
           "description": "一款飞鸟穿越障碍的街机游戏，支持动态天气系统、单人飞行与双人实时对战。",
           "platformVersion": ">=1.9.4",
-          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/Bird%20Fly/v1.0.0/bird_fly.zip",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/Bird%20Fly/v1.0.0/bird_fly.zip",
           "sha256": "b1cad779eb4e2937126e48a9f8a502d475859ea18e0ab9b21513641605494a64",
           "size": 54992646,
           "publishedAt": "2026-05-15T12:00:00.000Z"
@@ -77,8 +77,8 @@
         "反应",
         "联机"
       ],
-      "iconUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%89%93%E5%9C%B0%E9%BC%A0/icon.png",
-      "coverUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%89%93%E5%9C%B0%E9%BC%A0/cover.png",
+      "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%93%E5%9C%B0%E9%BC%A0/icon.png",
+      "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%93%E5%9C%B0%E9%BC%A0/cover.png",
       "featured": false,
       "visibility": "public",
       "minPlayers": 2,
@@ -89,7 +89,7 @@
           "version": "1.0.0",
           "description": "经典打地鼠游戏 - 多种模式，联机对战支持",
           "platformVersion": ">=1.6.0",
-          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%89%93%E5%9C%B0%E9%BC%A0/v1.0.0/%E6%89%93%E5%9C%B0%E9%BC%A0.zip",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%93%E5%9C%B0%E9%BC%A0/v1.0.0/%E6%89%93%E5%9C%B0%E9%BC%A0.zip",
           "sha256": "e18964582f272ffbf1518e2bd6aaedaea12001bcd2a59e58940593a6a0b1502e",
           "size": 28970023,
           "publishedAt": "2026-05-15T12:00:00.000Z"
@@ -107,8 +107,8 @@
         "网页",
         "点击"
       ],
-      "iconUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E5%A4%A7%E6%B5%B7%E4%B8%96%E7%95%8C/icon.png",
-      "coverUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E5%A4%A7%E6%B5%B7%E4%B8%96%E7%95%8C/cover.png",
+      "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E5%A4%A7%E6%B5%B7%E4%B8%96%E7%95%8C/icon.png",
+      "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E5%A4%A7%E6%B5%B7%E4%B8%96%E7%95%8C/cover.png",
       "featured": false,
       "visibility": "public",
       "latestVersion": "1.0.0",
@@ -117,7 +117,7 @@
           "version": "1.0.0",
           "description": "大海世界 — 点就完事了！",
           "platformVersion": ">=1.9.4",
-          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E5%A4%A7%E6%B5%B7%E4%B8%96%E7%95%8C/v1.0.0/%E5%A4%A7%E6%B5%B7%E4%B8%96%E7%95%8C.zip",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E5%A4%A7%E6%B5%B7%E4%B8%96%E7%95%8C/v1.0.0/%E5%A4%A7%E6%B5%B7%E4%B8%96%E7%95%8C.zip",
           "sha256": "19b07d7a9906cc13358825e0b306fbd4a195185e642e42d95a30cdf42d0ec542",
           "size": 7175281,
           "publishedAt": "2026-05-15T12:00:00.000Z"
@@ -135,8 +135,8 @@
         "卡牌",
         "联机"
       ],
-      "iconUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%96%97%E5%9C%B0%E4%B8%BB/icon.png",
-      "coverUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%96%97%E5%9C%B0%E4%B8%BB/cover.png",
+      "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E6%96%97%E5%9C%B0%E4%B8%BB/icon.png",
+      "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E6%96%97%E5%9C%B0%E4%B8%BB/cover.png",
       "featured": true,
       "visibility": "public",
       "minPlayers": 2,
@@ -147,7 +147,7 @@
           "version": "1.0.0",
           "description": "经典斗地主扑克游戏 - 支持3人联机对战！",
           "platformVersion": ">=1.2.0",
-          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%96%97%E5%9C%B0%E4%B8%BB/v1.0.0/%E6%96%97%E5%9C%B0%E4%B8%BB.zip",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E6%96%97%E5%9C%B0%E4%B8%BB/v1.0.0/%E6%96%97%E5%9C%B0%E4%B8%BB.zip",
           "sha256": "32d41811d8abfe6199e5572c6dac0867e0415db6920f3db42159dfd9be37471b",
           "size": 7414213,
           "publishedAt": "2026-05-15T12:00:00.000Z"
@@ -165,8 +165,8 @@
         "街机",
         "单人"
       ],
-      "iconUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97/icon.png",
-      "coverUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97/cover.png",
+      "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97/icon.png",
+      "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97/cover.png",
       "featured": true,
       "visibility": "public",
       "latestVersion": "3.0.0",
@@ -175,7 +175,7 @@
           "version": "1.0.0",
           "description": "经典俄罗斯方块游戏",
           "platformVersion": ">=1.0.0",
-          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97/v1.0.0/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97.zip",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97/v1.0.0/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97.zip",
           "sha256": "31185ca4c23ec42ac1674341be6b460894a926a7505e5bb04ba5e7da00ac594c",
           "size": 1837806,
           "publishedAt": "2026-05-15T12:00:00.000Z"
@@ -184,7 +184,7 @@
           "version": "2.0.0",
           "description": "经典俄罗斯方块游戏 - 全新升级！新增音效、增强动画",
           "platformVersion": ">=1.0.0",
-          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97/v2.0.0/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97.zip",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97/v2.0.0/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97.zip",
           "sha256": "86cbd0d269b9bfdfc76a7abb8ba2b7f5ac9df4709426047072a473093552df4d",
           "size": 1848588,
           "publishedAt": "2026-05-15T12:00:00.000Z"
@@ -193,7 +193,7 @@
           "version": "3.0.0",
           "description": "经典俄罗斯方块游戏 - 赛博朋克风格 UI，三种难度模式，完善的成就与统计系统",
           "platformVersion": ">=1.3.0",
-          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97/v3.0.0/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97.zip",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97/v3.0.0/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97.zip",
           "sha256": "19be5cf4b90070bed179080628f9f5e66a1400d2eb43cc5e54a7a7ba9920ea98",
           "size": 2488602,
           "publishedAt": "2026-05-15T12:00:00.000Z"
@@ -211,8 +211,8 @@
         "双人",
         "联机"
       ],
-      "iconUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E4%BA%95%E5%AD%97%E6%A3%8B/icon.png",
-      "coverUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E4%BA%95%E5%AD%97%E6%A3%8B/cover.png",
+      "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BA%95%E5%AD%97%E6%A3%8B/icon.png",
+      "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BA%95%E5%AD%97%E6%A3%8B/cover.png",
       "featured": false,
       "visibility": "public",
       "minPlayers": 2,
@@ -223,7 +223,7 @@
           "version": "1.0.0",
           "description": "经典井字棋游戏",
           "platformVersion": ">=1.2.0",
-          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E4%BA%95%E5%AD%97%E6%A3%8B/v1.0.0/%E4%BA%95%E5%AD%97%E6%A3%8B.zip",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BA%95%E5%AD%97%E6%A3%8B/v1.0.0/%E4%BA%95%E5%AD%97%E6%A3%8B.zip",
           "sha256": "60ac34e2391c7d9d60a2b848be0ce64cbd226b458f4950b1aad87c3f48f2cc67",
           "size": 1401041,
           "publishedAt": "2026-05-15T12:00:00.000Z"
@@ -241,8 +241,8 @@
         "策略",
         "联机"
       ],
-      "iconUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85/icon.png",
-      "coverUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85/cover.png",
+      "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85/icon.png",
+      "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85/cover.png",
       "featured": true,
       "visibility": "public",
       "minPlayers": 2,
@@ -253,7 +253,7 @@
           "version": "1.0.0",
           "description": "卡牌对战游戏，玩法参考皇室战争。双方各有3座塔，消耗圣水打出手牌部署兵种/建筑/法术，摧毁对方国王塔即获胜。",
           "platformVersion": ">=1.8.0",
-          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85/v1.0.0/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85.zip",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85/v1.0.0/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85.zip",
           "sha256": "ee42fc1a28d27fa1cccdf91f09d7458453f24db7bbbe8673ca879d64f3fb13ae",
           "size": 134308488,
           "publishedAt": "2026-05-15T12:00:00.000Z"
@@ -271,8 +271,8 @@
         "经典",
         "单人"
       ],
-      "iconUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%89%AB%E9%9B%B7/icon.png",
-      "coverUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%89%AB%E9%9B%B7/cover.png",
+      "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%AB%E9%9B%B7/icon.png",
+      "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%AB%E9%9B%B7/cover.png",
       "featured": false,
       "visibility": "public",
       "latestVersion": "1.0.0",
@@ -281,7 +281,7 @@
           "version": "1.0.0",
           "description": "经典扫雷游戏 - 揭开格子，避开地雷，考验你的逻辑推理能力！",
           "platformVersion": ">=1.2.0",
-          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%89%AB%E9%9B%B7/v1.0.0/%E6%89%AB%E9%9B%B7.zip",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%AB%E9%9B%B7/v1.0.0/%E6%89%AB%E9%9B%B7.zip",
           "sha256": "87de5f1730771e2fca5e7f461e35953e73321baf34f4662b1905e5374ac6ab99",
           "size": 1583128,
           "publishedAt": "2026-05-15T12:00:00.000Z"
@@ -299,8 +299,8 @@
         "动作",
         "单人"
       ],
-      "iconUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85/icon.png",
-      "coverUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85/cover.png",
+      "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85/icon.png",
+      "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85/cover.png",
       "featured": true,
       "visibility": "public",
       "latestVersion": "3.0.0",
@@ -309,7 +309,7 @@
           "version": "1.0.0",
           "description": "经典切水果游戏 - 新增难度、刀光皮肤等多种新功能！",
           "platformVersion": ">=1.1.0",
-          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85/v1.0.0/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85.zip",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85/v1.0.0/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85.zip",
           "sha256": "6c79abbb91a0b491d871c262b395ee7f82bc6e683ce6458dba7e57717f4c92aa",
           "size": 10735120,
           "publishedAt": "2026-05-16T14:30:34.000Z"
@@ -318,7 +318,7 @@
           "version": "2.0.0",
           "description": "经典切水果游戏 - 三种付费刀光全新特效震撼来袭！",
           "platformVersion": ">=1.2.0",
-          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85/v2.0.0/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85.zip",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85/v2.0.0/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85.zip",
           "sha256": "236fd294ba30d904afaad1b5a660056a5fc27b3dccba58d3ef95d9839ed00559",
           "size": 10768706,
           "publishedAt": "2026-05-16T14:33:39.000Z"
@@ -327,7 +327,7 @@
           "version": "3.0.0",
           "description": "经典切水果游戏 -全新游戏界面！生存模式来袭！更炫酷刀光！",
           "platformVersion": ">=1.4.0",
-          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85/v3.0.0/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85.zip",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85/v3.0.0/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85.zip",
           "sha256": "156cd8fa6177de27995256a8eae9597d03a893cc0cf8e17a6548b4832e7f153a",
           "size": 21048745,
           "publishedAt": "2026-05-16T14:38:36.000Z"
@@ -375,8 +375,8 @@
         "对战",
         "多人"
       ],
-      "iconUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98/icon.png",
-      "coverUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98/cover.png",
+      "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98/icon.png",
+      "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98/cover.png",
       "featured": true,
       "visibility": "public",
       "minPlayers": 1,
@@ -387,7 +387,7 @@
           "version": "1.0.0",
           "description": "多人在线坦克大战，支持大厅、地图投票与战斗结算流程",
           "platformVersion": ">=1.5.0",
-          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98/v1.0.0/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98.zip",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98/v1.0.0/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98.zip",
           "sha256": "50e6d210640a841388b843b1187fd9da2f4c2c29584bf63354309c40c3be9a24",
           "size": 58799114,
           "publishedAt": "2026-05-16T14:47:31.000Z"
@@ -396,7 +396,7 @@
           "version": "2.0.0",
           "description": "多人在线坦克大战，支持大厅、地图投票与战斗结算流程",
           "platformVersion": ">=1.5.0",
-          "downloadUrl": "https://web-bz.oss-cn-beijing.aliyuncs.com/bz-games-market/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98/v2.0.0/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98.zip",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98/v2.0.0/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98.zip",
           "sha256": "03893d525b9f2aa3330d223a8051b910c1299bf08677b1e4ac7f69870cd4d40b",
           "size": 77348745,
           "publishedAt": "2026-05-16T14:57:41.000Z"
