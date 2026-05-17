@@ -531,7 +531,7 @@
       "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%93%E5%9C%B0%E9%BC%A0/icon.png",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%93%E5%9C%B0%E9%BC%A0/cover.png",
       "featured": false,
-      "visibility": "hidden",
+      "visibility": "public",
       "minPlayers": 2,
       "maxPlayers": 2,
       "latestVersion": "1.0.0",
@@ -540,8 +540,8 @@
           "version": "1.0.0",
           "description": "经典打地鼠游戏 - 多种模式，联机对战支持",
           "platformVersion": ">=1.6.0",
-          "downloadUrl": "http://123.com",
-          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "downloadUrl": "",
+          "sha256": "",
           "size": 0,
           "publishedAt": "2026-05-15T12:00:00.000Z"
         }
