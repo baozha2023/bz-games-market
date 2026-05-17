@@ -2,7 +2,7 @@
   "schemaVersion": "1.0.0",
   "marketId": "official",
   "marketName": "BZ Games Market",
-  "generatedAt": "2026-05-16T14:57:41.000Z",
+  "generatedAt": "2026-05-17T07:53:16.000Z",
   "source": {
     "repository": "https://github.com/baozha2023/bz-games-market.git",
     "branch": "master"
@@ -62,36 +62,6 @@
           "downloadUrl": "http://cdn.bzgames.top/bz-games-market/Bird%20Fly/v1.0.0/bird_fly.zip",
           "sha256": "b1cad779eb4e2937126e48a9f8a502d475859ea18e0ab9b21513641605494a64",
           "size": 54992646,
-          "publishedAt": "2026-05-15T12:00:00.000Z"
-        }
-      ]
-    },
-    {
-      "id": "com.bz.whackamole",
-      "name": "打地鼠",
-      "author": "BZ-Games Team",
-      "type": "singlemultiple",
-      "summary": "经典打地鼠玩法，支持多种模式与联机对战。",
-      "tags": [
-        "休闲",
-        "反应",
-        "联机"
-      ],
-      "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%93%E5%9C%B0%E9%BC%A0/icon.png",
-      "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%93%E5%9C%B0%E9%BC%A0/cover.png",
-      "featured": false,
-      "visibility": "public",
-      "minPlayers": 2,
-      "maxPlayers": 2,
-      "latestVersion": "1.0.0",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "description": "经典打地鼠游戏 - 多种模式，联机对战支持",
-          "platformVersion": ">=1.6.0",
-          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%93%E5%9C%B0%E9%BC%A0/v1.0.0/%E6%89%93%E5%9C%B0%E9%BC%A0.zip",
-          "sha256": "e18964582f272ffbf1518e2bd6aaedaea12001bcd2a59e58940593a6a0b1502e",
-          "size": 28970023,
           "publishedAt": "2026-05-15T12:00:00.000Z"
         }
       ]
@@ -335,6 +305,36 @@
       ]
     },
     {
+      "id": "com.bz.whackamole",
+      "name": "打地鼠",
+      "author": "BZ-Games Team",
+      "type": "singlemultiple",
+      "summary": "经典打地鼠玩法，支持多种模式与联机对战。",
+      "tags": [
+        "休闲",
+        "反应",
+        "联机"
+      ],
+      "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%93%E5%9C%B0%E9%BC%A0/icon.png",
+      "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%93%E5%9C%B0%E9%BC%A0/cover.png",
+      "featured": false,
+      "visibility": "hidden",
+      "minPlayers": 2,
+      "maxPlayers": 2,
+      "latestVersion": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "description": "经典打地鼠游戏 - 多种模式，联机对战支持",
+          "platformVersion": ">=1.6.0",
+          "downloadUrl": "",
+          "sha256": "",
+          "size": 0,
+          "publishedAt": "2026-05-15T12:00:00.000Z"
+        }
+      ]
+    },
+    {
       "id": "com.bz.connectfour",
       "name": "四子棋",
       "author": "BZ-Games Team",
@@ -345,22 +345,22 @@
         "策略",
         "联机"
       ],
-      "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/四子棋/icon.png",
-      "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/四子棋/cover.png",
+      "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E5%9B%9B%E5%AD%90%E6%A3%8B/icon.png",
+      "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E5%9B%9B%E5%AD%90%E6%A3%8B/cover.png",
       "featured": false,
-      "visibility": "hidden",
+      "visibility": "public",
       "minPlayers": 2,
       "maxPlayers": 2,
       "latestVersion": "1.0.0",
       "versions": [
         {
           "version": "1.0.0",
-          "description": "正式发布版本。经典四子棋游戏，联机对战，率先连成四子者获胜",
+          "description": "经典四子棋游戏，联机对战，率先连成四子者获胜",
           "platformVersion": ">=1.4.0",
-          "downloadUrl": "https://github.com/baozha2023/bz-games-market/releases/download/com.bz.connectfour-1.0.0/com.bz.connectfour-1.0.0.zip",
-          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-          "size": 0,
-          "publishedAt": "2026-05-15T12:00:00.000Z"
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E5%9B%9B%E5%AD%90%E6%A3%8B/v1.0.0/%E5%9B%9B%E5%AD%90%E6%A3%8B.zip",
+          "sha256": "c21c8ef7a2122cfa1f8962bede4cdbbf2c23e3c735cdb8755b9f707256d548d1",
+          "size": 2631413,
+          "publishedAt": "2026-05-17T07:53:16.000Z"
         }
       ]
     },
