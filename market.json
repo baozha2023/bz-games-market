@@ -2,7 +2,7 @@
   "schemaVersion": "1.0.0",
   "marketId": "official",
   "marketName": "BZ Games Market",
-  "generatedAt": "2026-05-17T07:53:16.000Z",
+  "generatedAt": "2026-05-19T14:19:47.000Z",
   "source": {
     "repository": "https://github.com/baozha2023/bz-games-market.git",
     "branch": "master"
@@ -442,20 +442,29 @@
         "人机",
         "单人"
       ],
-      "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/五子棋单机版/icon.png",
-      "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/五子棋单机版/cover.png",
+      "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BA%94%E5%AD%90%E6%A3%8B%E5%8D%95%E6%9C%BA%E7%89%88/icon.png",
+      "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BA%94%E5%AD%90%E6%A3%8B%E5%8D%95%E6%9C%BA%E7%89%88/cover.png",
       "featured": false,
-      "visibility": "hidden",
+      "visibility": "public",
       "latestVersion": "2.0.0",
       "versions": [
         {
+          "version": "1.0.0",
+          "description": "经典五子棋人机对战游戏，使用 AI 算法进行智能对局。支持三种难度选择，炫酷的动画效果让你享受棋盘上的乐趣！",
+          "platformVersion": ">=1.3.0",
+          "sha256": "283ed1665b6d54228abfdbb0db30b836e91b0a0d5565442642413e7e750483ef",
+          "size": 2133135,
+          "publishedAt": "2026-05-19T14:16:22.000Z",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BA%94%E5%AD%90%E6%A3%8B%E5%8D%95%E6%9C%BA%E7%89%88/v1.0.0/%E4%BA%94%E5%AD%90%E6%A3%8B%E5%8D%95%E6%9C%BA%E7%89%88.zip"
+        },
+        {
           "version": "2.0.0",
-          "description": "正式发布版本。经典五子棋人机对战游戏。新增究极模式，支持AI先手",
+          "description": "经典五子棋人机对战游戏。新增究极模式，支持AI先手",
           "platformVersion": ">=1.4.0",
-          "downloadUrl": "https://github.com/baozha2023/bz-games-market/releases/download/com.game.gomokusingle-2.0.0/com.game.gomokusingle-2.0.0.zip",
-          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-          "size": 0,
-          "publishedAt": "2026-05-15T12:00:00.000Z"
+          "sha256": "6917eec75ec3a00055e1cdd42e19ff760bd9da67c6caf3c64ae065ae4a4d4ecd",
+          "size": 2143103,
+          "publishedAt": "2026-05-19T14:19:47.000Z",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BA%94%E5%AD%90%E6%A3%8B%E5%8D%95%E6%9C%BA%E7%89%88/v2.0.0/%E4%BA%94%E5%AD%90%E6%A3%8B%E5%8D%95%E6%9C%BA%E7%89%88.zip"
         }
       ]
     },
