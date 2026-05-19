@@ -2,7 +2,7 @@
   "schemaVersion": "1.0.0",
   "marketId": "official",
   "marketName": "BZ Games Market",
-  "generatedAt": "2026-05-19T14:19:47.000Z",
+  "generatedAt": "2026-05-19T14:28:35.000Z",
   "source": {
     "repository": "https://github.com/baozha2023/bz-games-market.git",
     "branch": "master"
@@ -479,20 +479,20 @@
         "国风",
         "单人"
       ],
-      "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/消消乐/assets/images/backgrounds/icon.png",
-      "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/消消乐/assets/images/backgrounds/cover.png",
+      "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E7%81%B5%E9%9F%B5%E6%B6%88%E6%B6%88%EF%BC%9A%E5%85%83%E7%B4%A0%E7%BA%AA%E5%85%83/icon.png",
+      "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E7%81%B5%E9%9F%B5%E6%B6%88%E6%B6%88%EF%BC%9A%E5%85%83%E7%B4%A0%E7%BA%AA%E5%85%83/cover.png",
       "featured": true,
-      "visibility": "hidden",
+      "visibility": "public",
       "latestVersion": "1.0.0",
       "versions": [
         {
           "version": "1.0.0",
-          "description": "正式发布版本。中国风玄幻主题消消乐，融合五行元素反应系统与灵韵收集玩法。",
+          "description": "中国风玄幻主题消消乐，融合五行元素反应系统与灵韵收集玩法。",
           "platformVersion": ">=1.3.0",
-          "downloadUrl": "https://github.com/baozha2023/bz-games-market/releases/download/com.bz.element-match-1.0.0/com.bz.element-match-1.0.0.zip",
-          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-          "size": 0,
-          "publishedAt": "2026-05-15T12:00:00.000Z"
+          "sha256": "82e9c3a43cb083d1f7e74417d683bb915d8f5a5844382a9a8069b71a472667b4",
+          "size": 35368949,
+          "publishedAt": "2026-05-19T14:28:35.000Z",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E7%81%B5%E9%9F%B5%E6%B6%88%E6%B6%88%EF%BC%9A%E5%85%83%E7%B4%A0%E7%BA%AA%E5%85%83/v1.0.0/%E7%81%B5%E9%9F%B5%E6%B6%88%E6%B6%88%EF%BC%9A%E5%85%83%E7%B4%A0%E7%BA%AA%E5%85%83.zip"
         }
       ]
     },
