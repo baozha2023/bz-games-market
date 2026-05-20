@@ -2,7 +2,7 @@
   "schemaVersion": "1.0.0",
   "marketId": "official",
   "marketName": "BZ Games Market",
-  "generatedAt": "2026-05-19T14:28:35.000Z",
+  "generatedAt": "2026-05-20T03:51:49.000Z",
   "source": {
     "repository": "https://github.com/baozha2023/bz-games-market.git",
     "branch": "master"
@@ -21,7 +21,7 @@
       ],
       "iconUrl": "http://cdn.bzgames.top/bz-games-market/2048/icon.png",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/2048/cover.png",
-      "featured": true,
+      "featured": false,
       "visibility": "public",
       "latestVersion": "1.0.0",
       "versions": [
@@ -107,7 +107,7 @@
       ],
       "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E6%96%97%E5%9C%B0%E4%B8%BB/icon.png",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E6%96%97%E5%9C%B0%E4%B8%BB/cover.png",
-      "featured": true,
+      "featured": false,
       "visibility": "public",
       "minPlayers": 2,
       "maxPlayers": 3,
@@ -137,7 +137,7 @@
       ],
       "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97/icon.png",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97/cover.png",
-      "featured": true,
+      "featured": false,
       "visibility": "public",
       "latestVersion": "3.0.0",
       "versions": [
@@ -507,22 +507,22 @@
         "策略",
         "联机"
       ],
-      "iconUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/中国象棋/icon.png",
-      "coverUrl": "https://raw.githubusercontent.com/baozha2023/bz-games/main/中国象棋/cover.png",
+      "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E4%B8%AD%E5%9B%BD%E8%B1%A1%E6%A3%8B/icon.png",
+      "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E4%B8%AD%E5%9B%BD%E8%B1%A1%E6%A3%8B/cover.png",
       "featured": false,
-      "visibility": "hidden",
+      "visibility": "public",
       "minPlayers": 2,
       "maxPlayers": 2,
       "latestVersion": "1.0.0",
       "versions": [
         {
           "version": "1.0.0",
-          "description": "正式发布版本。经典中国象棋游戏，红黑双方对战，策略与智慧的较量",
+          "description": "经典中国象棋游戏，红黑双方对战，策略与智慧的较量",
           "platformVersion": ">=1.4.0",
-          "downloadUrl": "https://github.com/baozha2023/bz-games-market/releases/download/com.bz.xiangqi-1.0.0/com.bz.xiangqi-1.0.0.zip",
-          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-          "size": 0,
-          "publishedAt": "2026-05-15T12:00:00.000Z"
+          "sha256": "f142066568d56bb06cfc76b91acfbd7c01103b33f81a978640a2b2de63b55994",
+          "size": 5420186,
+          "publishedAt": "2026-05-20T03:51:49.000Z",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%B8%AD%E5%9B%BD%E8%B1%A1%E6%A3%8B/v1.0.0/%E4%B8%AD%E5%9B%BD%E8%B1%A1%E6%A3%8B.zip"
         }
       ]
     },
