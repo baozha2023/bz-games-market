@@ -15,32 +15,61 @@ bz-games-market/
 
 ## market.json 结构
 
+### 顶层结构（市场目录）
+
+`market.json` 位于仓库根目录，作为**市场目录文件**，描述可用的市场源列表，同时包含当前仓库自身的游戏列表。
+
 ```json
 {
   "schemaVersion": "1.0.0",
   "marketId": "official",
   "marketName": "BZ Games Market",
-  "generatedAt": "2026-05-15T12:00:00.000Z",
-  "source": {
-    "repository": "https://github.com/baozha2023/bz-games-market.git",
-    "branch": "master"
-  },
+  "generatedAt": "2026-05-22T04:21:02.000Z",
+  "sources": [
+    {
+      "marketId": "official",
+      "marketName": "BZ Games Market",
+      "coverUrl": "http://cdn.bzgames.top/bz-games-market/cover.png",
+      "generatedAt": "2026-05-22T04:21:02.000Z",
+      "repository": "https://github.com/baozha2023/bz-games-market.git",
+      "branch": "master",
+      "featured": true,
+      "visibility": "public"
+    }
+  ],
   "games": []
 }
 ```
 
 > **注意**：每次更新 `market.json` 后，需同步更新 `generatedAt` 为当前 UTC 时间。
+>
+> `sources` 数组和 `games` 数组**共存于同一文件**：平台通过 `MarketDirectorySchema` 解析 `sources` 展示市场列表（一级界面），通过 `MarketIndexSchema` 解析 `games` 展示该市场的游戏（二级界面）。
 
 ### 顶层字段
 
-| 字段              | 类型     | 必填 | 说明                       |
-|-----------------|--------|----|--------------------------|
-| `schemaVersion` | string | 是  | 索引格式版本，如 `"1.0.0"`       |
-| `marketId`      | string | 是  | 市场唯一标识                   |
-| `marketName`    | string | 是  | 市场显示名称                   |
-| `generatedAt`   | string | 是  | 索引生成时间（ISO 8601），每次更新需刷新 |
-| `source`        | object | 否  | 索引来源仓库信息（诊断用途）           |
-| `games`         | Game[] | 是  | 游戏列表                     |
+| 字段              | 类型          | 必填 | 说明                       |
+|-----------------|-------------|----|--------------------------|
+| `schemaVersion` | string      | 是  | 索引格式版本，如 `"1.0.0"`       |
+| `marketId`      | string      | 是  | 当前市场的唯一标识（与 `sources[0].marketId` 一致） |
+| `marketName`    | string      | 是  | 当前市场的显示名称                |
+| `generatedAt`   | string      | 是  | 索引生成时间（ISO 8601），每次更新需刷新 |
+| `sources`       | Source[]    | 是  | 市场源列表，至少 1 项             |
+| `games`         | Game[]      | 是  | 游戏列表（与 `sources[0]` 对应）   |
+
+### Source 字段（sources 数组元素）
+
+每个 source 代表一个独立的市场仓库，平台一级界面展示所有 source。
+
+| 字段            | 类型      | 必填 | 说明                                                                     |
+|---------------|---------|----|------------------------------------------------------------------------|
+| `marketId`    | string  | 是  | 市场唯一标识                                                                |
+| `marketName`  | string  | 是  | 市场显示名称                                                                |
+| `coverUrl`    | string  | 否  | 市场封面图远程地址，建议 HTTPS，用于一级界面卡片展示                                           |
+| `generatedAt` | string  | 是  | 该市场索引的生成时间（ISO 8601）                                                   |
+| `repository`  | string  | 是  | GitHub 仓库地址（仅支持 GitHub），如 `https://github.com/user/repo.git`             |
+| `branch`      | string  | 是  | 仓库分支，如 `master` 或 `main`                                               |
+| `featured`    | boolean | 否  | 是否在市场列表重点推荐                                                            |
+| `visibility`  | string  | 否  | 可见性：`public` / `hidden`（默认 `public`，`hidden` 的 source 不在市场列表中展示）          |
 
 ### Game 字段
 
@@ -160,14 +189,32 @@ git push origin master
 
 推送后，GitHub Actions 会自动将 `market.json` 同步到 OSS 作为备用源。
 
-## 双源加载
+## 市场加载策略
 
-平台加载 market.json 时采用主备双源策略：
+平台采用**两级市场架构**：
+
+### 一级：市场列表
+
+平台启动后进入"游戏市场"页面时，加载顶层 `market.json` 解析 `sources` 数组，展示所有可用的市场源。用户点击任意市场进入其游戏列表。
+
+### 二级：游戏列表
+
+进入具体市场后，平台从该市场对应仓库的 `market.json` 拉取游戏索引。第 0 号 source（即顶层 `market.json` 自身）直接使用同文件的 `games` 字段。
+
+### 主备双源
+
+顶层 `market.json` 加载采用主备策略：
 
 1. **主源**（优先级最高）：`https://raw.githubusercontent.com/baozha2023/bz-games-market/master/market.json`
 2. **备用源**（主源失败时回退）：`https://web-bz.oss-cn-beijing.aliyuncs.com/market.json`
 
-平台每次进入"游戏市场"页面都会主动拉取最新索引（不依赖本地缓存），备用源由 GitHub Actions 在每次推送时自动同步。
+外部市场源的 `market.json` 从其仓库的 raw 地址直接加载（`https://raw.githubusercontent.com/{owner}/{repo}/{branch}/market.json`）。
+
+### 缓存策略
+
+- 顶层市场列表和市场索引均有 1 小时内存缓存
+- 缓存不落盘，应用重启后自动失效
+- 用户可点击"刷新"按钮强制拉取最新数据
 
 ## 游戏类型说明
 
