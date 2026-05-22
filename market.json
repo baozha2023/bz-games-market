@@ -2,7 +2,7 @@
   "schemaVersion": "1.0.0",
   "marketId": "official",
   "marketName": "BZ Games Market",
-  "generatedAt": "2026-05-20T03:51:49.000Z",
+  "generatedAt": "2026-05-22T04:21:02.000Z",
   "source": {
     "repository": "https://github.com/baozha2023/bz-games-market.git",
     "branch": "master"
@@ -483,7 +483,7 @@
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E7%81%B5%E9%9F%B5%E6%B6%88%E6%B6%88%EF%BC%9A%E5%85%83%E7%B4%A0%E7%BA%AA%E5%85%83/cover.png",
       "featured": true,
       "visibility": "public",
-      "latestVersion": "1.0.0",
+      "latestVersion": "2.0.0",
       "versions": [
         {
           "version": "1.0.0",
@@ -493,6 +493,15 @@
           "size": 35368949,
           "publishedAt": "2026-05-19T14:28:35.000Z",
           "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E7%81%B5%E9%9F%B5%E6%B6%88%E6%B6%88%EF%BC%9A%E5%85%83%E7%B4%A0%E7%BA%AA%E5%85%83/v1.0.0/%E7%81%B5%E9%9F%B5%E6%B6%88%E6%B6%88%EF%BC%9A%E5%85%83%E7%B4%A0%E7%BA%AA%E5%85%83.zip"
+        },
+        {
+          "version": "2.0.0",
+          "description": "六元素十五种组合反应，冰封、藤蔓、灵雾三大障碍，五大外观主题与三种消除特效，四十五个精心设计的关卡加上无尽模式，搭配成就系统与灵韵商店，带来丰富多变的消除体验。",
+          "platformVersion": ">=1.9.4",
+          "sha256": "064117ce2ddff8ebdb4b8ce5199ea951950355c144c3d6b19abf375d1c375b19",
+          "size": 73124392,
+          "publishedAt": "2026-05-22T04:21:02.000Z",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E7%81%B5%E9%9F%B5%E6%B6%88%E6%B6%88%EF%BC%9A%E5%85%83%E7%B4%A0%E7%BA%AA%E5%85%83/v2.0.0/%E7%81%B5%E9%9F%B5%E6%B6%88%E6%B6%88%EF%BC%9A%E5%85%83%E7%B4%A0%E7%BA%AA%E5%85%83.zip"
         }
       ]
     },
