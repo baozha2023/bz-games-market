@@ -61,7 +61,7 @@
       "visibility": "public",
       "minPlayers": 2,
       "maxPlayers": 2,
-      "latestVersion": "1.0.0",
+      "latestVersion": "2.0.0",
       "versions": [
         {
           "version": "1.0.0",
