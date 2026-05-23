@@ -2,13 +2,13 @@
   "schemaVersion": "1.1.0",
   "marketId": "official",
   "marketName": "BZ Games Market",
-  "generatedAt": "2026-05-22T04:21:02.000Z",
+  "generatedAt": "2026-05-15T12:00:00.000Z",
   "sources": [
     {
       "marketId": "official",
       "marketName": "BZ Games Market",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/cover.png",
-      "generatedAt": "2026-05-22T04:21:02.000Z",
+      "generatedAt": "2026-05-15T12:00:00.000Z",
       "repository": "https://github.com/baozha2023/bz-games-market.git",
       "branch": "master",
       "featured": true,
@@ -231,10 +231,10 @@
           "version": "1.0.0",
           "description": "卡牌对战游戏，玩法参考皇室战争。双方各有3座塔，消耗圣水打出手牌部署兵种/建筑/法术，摧毁对方国王塔即获胜。",
           "platformVersion": ">=1.8.0",
-          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85/v1.0.0/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85.zip",
-          "sha256": "ee42fc1a28d27fa1cccdf91f09d7458453f24db7bbbe8673ca879d64f3fb13ae",
-          "size": 134308488,
-          "publishedAt": "2026-05-15T12:00:00.000Z"
+          "sha256": "3ba60c19844d854f2bf2d60d5b910972d245b13a4aed19fcbeffd18d82d56906",
+          "size": 134285401,
+          "publishedAt": "2026-05-23T03:52:36.000Z",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85/v1.0.0/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85.zip"
         }
       ]
     },
