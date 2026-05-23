@@ -71,6 +71,15 @@
           "sha256": "b1cad779eb4e2937126e48a9f8a502d475859ea18e0ab9b21513641605494a64",
           "size": 54992646,
           "publishedAt": "2026-05-15T12:00:00.000Z"
+        },
+        {
+          "version": "2.0.0",
+          "description": "穿越风暴、沙尘与迷雾，在动态天气中操控飞鸟躲避管道。全新护盾道具、重制成就系统、双人对战。",
+          "platformVersion": ">=1.9.4",
+          "sha256": "a4b24d78deb6f1efe51907a1770fc0df4c1643b4e82707ea55c15683914eea67",
+          "size": 93742192,
+          "publishedAt": "2026-05-23T14:23:08.000Z",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/bird_fly/v2.0.0/bird_fly.zip"
         }
       ]
     },
