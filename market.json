@@ -211,7 +211,7 @@
     {
       "id": "com.bzgames.lord-of-glory-breaker",
       "name": "荣耀领主：破城者",
-      "author": "BZ-Games",
+      "author": "BZ-Games Team",
       "type": "singlemultiple",
       "summary": "参考皇室战争玩法的卡牌对战游戏，支持单人与双人对战。",
       "tags": [
@@ -231,9 +231,9 @@
           "version": "1.0.0",
           "description": "卡牌对战游戏，玩法参考皇室战争。双方各有3座塔，消耗圣水打出手牌部署兵种/建筑/法术，摧毁对方国王塔即获胜。",
           "platformVersion": ">=1.8.0",
-          "sha256": "3ba60c19844d854f2bf2d60d5b910972d245b13a4aed19fcbeffd18d82d56906",
+          "sha256": "b235aad4a02ff1bb83ab6f0cb23f6c23f47664de8062bc04813d9203c84f79eb",
           "size": 134285401,
-          "publishedAt": "2026-05-23T03:52:36.000Z",
+          "publishedAt": "2026-05-23T04:03:28.000Z",
           "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85/v1.0.0/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85.zip"
         }
       ]
