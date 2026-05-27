@@ -104,6 +104,7 @@ bz-games-market/
 | `publishedAt`     | string  | 否  | 发布时间（ISO 8601），如 `"2024-01-15T08:00:00.000Z"`       |
 | `releaseNotes`    | string  | 否  | 详细更新说明                                              |
 | `isPrerelease`    | boolean | 否  | 是否为预发布版本；预发布版本不作为 `latestVersion`                   |
+| `gameManifest`    | object  | 否  | 游戏的 `game.json` 清单覆盖配置，用于无 `game.json` 的第三方游戏适配（详见下方说明） |
 
 ## 平台校验规则
 
@@ -115,17 +116,75 @@ bz-games-market/
 | 本地已安装          | 检查本地 `gameRecord` 中是否已存在相同 `id + version`                                                        | `already_installed`         |
 | 下载完整性          | 比对下载文件 `sha256` 与索引中的值                                                                           | `verify`                    |
 | 文件大小           | 比对下载文件 `size` 与索引中的值                                                                             | `verify`                    |
-| 解压结构           | 根目录或第一层单子目录中必须存在 `game.json`                                                                     | `extract`                   |
+| 解压结构           | 根目录或第一层单子目录中必须存在 `game.json`；若无，则需在对应版本的 `gameManifest` 字段中配置，平台将自动生成 `game.json` | `extract`                   |
 | Manifest ID/版本 | `game.json.id`、`game.json.version` 必须与索引一致                                                       | `install`                   |
 | Manifest 平台兼容  | `game.json.platformVersion` 使用 `semver` 做语义化兼容性检查（支持 string 和 tuple `[min, max]` 两种格式），不做字符串直接比对 | `install`                   |
 
 ## 安装包约束
 
 - **格式**：支持 `.zip` 和 `.7z`，平台根据 `downloadUrl` 后缀自动识别。`.zip` 使用 `extract-zip`（纯 Node.js）解压，`.7z` 使用内置 `7za` 二进制解压
-- **结构**：解压后根目录或第一层单子目录中必须包含 `game.json`；平台会自动穿透单层嵌套目录
+- **结构**：解压后根目录或第一层单子目录中应包含 `game.json`；平台会自动穿透单层嵌套目录。若无 `game.json`，可在对应版本的 `gameManifest` 字段中配置，平台将自动生成
 - **安全**：压缩包内不得出现绝对路径、盘符路径或 `../` 路径穿越条目
 - **目录命名**：压缩包解压后的目录结构应能直接作为普通"本地导入"的输入目录
 - **幂等性**：若本地已存在相同 `id + version`，视为已安装，不重复覆盖
+
+### 第三方游戏适配（无 `game.json`）
+
+部分第三方游戏压缩包内不包含 `game.json` 文件。为适配此类游戏，可在对应版本的 `gameManifest` 字段中配置所需的清单信息，平台安装时会自动生成 `game.json`。
+
+> **规则**：若解压后不存在 `game.json` 且对应版本的 `gameManifest` 也未配置，则安装失败，提示"该游戏异常，安装失败"，并自动清除下载的游戏文件。
+
+`gameManifest` 包含 `game.json` 中除 `id`（由 Market Game 的 `id` 提供）和 `version`（由当前 Version 的 `version` 提供）之外的所有字段，**均为可选**。未配置的字段将按以下优先级自动回退：
+
+| `gameManifest` 字段 | 回退来源（当未配置时）                    |
+|-------------------|----------------------------------|
+| `name`            | Market Game 的 `name`             |
+| `author`          | Market Game 的 `author`           |
+| `type`            | Market Game 的 `type`             |
+| `description`     | Market Game 的 `summary`          |
+| `platformVersion` | 当前 Version 的 `platformVersion`  |
+| `entry`           | 无回退来源，自动检测目录中的入口文件；若无法检测则安装失败 |
+
+`gameManifest` 完整字段列表（均为可选）：
+
+| 字段                   | 类型               | 说明                       |
+|----------------------|------------------|--------------------------|
+| `name`               | string           | 游戏显示名称                   |
+| `description`        | string           | 游戏描述                     |
+| `author`             | string           | 作者/工作室名称                 |
+| `platformVersion`    | string / [string, string] | 平台兼容版本范围     |
+| `entry`              | string           | 启动入口文件或模式（如 `index.html`、`game.exe`、`serve`、`url`） |
+| `web_url`            | string           | `entry=url` 时的远程网页地址      |
+| `icon`               | string           | 图标文件路径（相对于游戏根目录）         |
+| `cover`              | string           | 封面文件路径                   |
+| `video`              | string           | 预览视频文件路径                 |
+| `encryptLocalStorage`| boolean          | 是否加密本地存储                 |
+| `type`               | string           | 游戏类型，同 Market Game 的 `type` |
+| `statistics`         | array            | 统计指标列表                   |
+| `multiplayer`        | object           | 多人游戏配置 `{minPlayers, maxPlayers}` |
+| `args`               | string[]         | Native 游戏启动参数             |
+| `env`                 | object           | Native 游戏环境变量             |
+| `achievements`       | array            | 成就列表定义                   |
+
+**示例**：一个没有 `game.json` 的第三方游戏版本配置：
+
+```json
+{
+  "version": "1.0.0",
+  "description": "经典消除游戏",
+  "platformVersion": ">=1.0.0",
+  "downloadUrl": "http://cdn.bzgames.top/bz-games-market/match3/v1.0.0/game.zip",
+  "sha256": "a1b2c3d4e5f6...",
+  "size": 5242880,
+  "publishedAt": "2026-05-15T12:00:00.000Z",
+  "gameManifest": {
+    "entry": "index.html",
+    "icon": "icon.png"
+  }
+}
+```
+
+> 此配置中，`name`、`author`、`type` 等字段将从 Market Game 层级自动继承，无需重复填写。
 
 ## 工作流程
 
@@ -182,6 +241,7 @@ bz-games-market/<游戏名>/cover.png
 - [ ] `sha256` 为 64 位 hex 字符串
 - [ ] `size` 为精确字节数
 - [ ] 更新 `generatedAt` 为当前 UTC 时间
+- [ ] （第三方游戏）若安装包内无 `game.json`，需在对应版本中填写 `gameManifest` 字段
 
 ### 5. 提交到 GitHub
 
@@ -228,13 +288,3 @@ git push origin master
 | `multiplayer`    | 纯多人游戏，必须联机游玩                             |
 | `singlemultiple` | 同时支持单人与联机模式                              |
 | `networkgame`    | 网页游戏（`entry=url`），平台直接打开远程网页地址，不参与房间联机流程 |
-
-## .gitignore 规则
-
-```
-.idea
-*.zip
-__pycache__/
-```
-
-如需提交新文件类型，先更新 `.gitignore`。
