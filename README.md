@@ -81,8 +81,8 @@ bz-games-market/
 | `type`          | string    | 是  | 类型：`singleplayer` / `multiplayer` / `singlemultiple` / `networkgame` |
 | `summary`       | string    | 是  | 简要介绍，最多 200 字符                                                       |
 | `tags`          | string[]  | 否  | 标签列表，用于市场内搜索                                                         |
-| `iconUrl`       | string    | 否  | 图标远程地址，建议 HTTPS                                                      |
-| `coverUrl`      | string    | 否  | 封面远程地址，建议 16:9 比例                                                    |
+| `iconUrl`       | string    | 否  | 图标远程地址，建议 HTTPS。未配置时显示"暂无图片" |
+| `coverUrl`      | string    | 否  | 封面远程地址，建议 16:9 比例。未配置时显示"暂无图片" |
 | `screenshots`   | string[]  | 否  | 详情页截图 URL 列表                                                         |
 | `featured`      | boolean   | 否  | 是否在市场首页重点推荐                                                          |
 | `visibility`    | string    | 否  | 可见性：`public` / `hidden` / `deprecated`（默认 `public`）                  |

@@ -13,6 +13,15 @@
       "branch": "master",
       "featured": true,
       "visibility": "public"
+    },
+    {
+      "marketId": "third-party",
+      "marketName": "第三方市场",
+      "generatedAt": "2026-05-27T08:00:00.000Z",
+      "repository": "https://github.com/baozha2023/bz-games-third-party-market.git",
+      "branch": "master",
+      "featured": false,
+      "visibility": "public"
     }
   ],
   "games": [
@@ -579,42 +588,6 @@
           "sha256": "",
           "size": 0,
           "publishedAt": "2026-05-15T12:00:00.000Z"
-        }
-      ]
-    },
-    {
-      "id": "com.bz.floppybird",
-      "name": "Floppy Bird",
-      "author": "Nebez",
-      "type": "singleplayer",
-      "summary": "经典 Flappy Bird 网页版克隆 — 操控小鸟穿越管道障碍，挑战最高分！",
-      "tags": [
-        "街机",
-        "休闲",
-        "单人"
-      ],
-      "iconUrl": "http://cdn.bzgames.top/bz-games-market/Floppy%20Bird/icon.png",
-      "coverUrl": "http://cdn.bzgames.top/bz-games-market/Floppy%20Bird/cover.png",
-      "featured": false,
-      "visibility": "public",
-      "latestVersion": "1.0.0",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "description": "经典 Flappy Bird 网页版 — 点击/空格让小鸟飞起，穿越管道得高分！",
-          "platformVersion": ">=1.0.0",
-          "downloadUrl": "https://github.com/nebez/floppybird/archive/refs/heads/gh-pages.zip",
-          "sha256": "bed7cce2411eb3f3fbd343816ce8bfdecd3d51e7c6f849277b9bd4ec6735ef33",
-          "size": 269260,
-          "publishedAt": "2026-05-27T08:00:00.000Z",
-          "gameManifest": {
-            "name": "Floppy Bird",
-            "description": "经典 Flappy Bird 网页版克隆 — 操控小鸟穿越管道障碍，挑战最高分！",
-            "author": "Nebez",
-            "platformVersion": ">=1.0.0",
-            "entry": "index.html",
-            "type": "singleplayer"
-          }
         }
       ]
     }
