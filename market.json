@@ -30,6 +30,7 @@
       "id": "com.bz.2048",
       "name": "2048",
       "author": "BZ-Games Team",
+      "author_url": "https://github.com/baozha2023",
       "type": "singleplayer",
       "summary": "经典 2048 数字益智游戏，合并相同数字并挑战合成 2048。",
       "tags": [
@@ -58,6 +59,7 @@
       "id": "com.bz.birdfly",
       "name": "Bird Fly",
       "author": "BZ-Games Team",
+      "author_url": "https://github.com/baozha2023",
       "type": "singlemultiple",
       "summary": "飞鸟穿越障碍的街机游戏，支持动态天气、单人飞行与双人对战。",
       "tags": [
@@ -97,6 +99,7 @@
       "id": "com.wwhdsone.long",
       "name": "大海世界",
       "author": "WwhdsOne",
+      "author_url": "https://github.com/baozha2023",
       "type": "networkgame",
       "summary": "点就完事了！",
       "tags": [
@@ -125,6 +128,7 @@
       "id": "com.bz.landlord",
       "name": "斗地主",
       "author": "BZ-Games Team",
+      "author_url": "https://github.com/baozha2023",
       "type": "multiplayer",
       "summary": "经典斗地主扑克玩法，支持 2 至 3 人联机对战。",
       "tags": [
@@ -155,6 +159,7 @@
       "id": "com.bz.tetris",
       "name": "俄罗斯方块",
       "author": "BZ-Games Team",
+      "author_url": "https://github.com/baozha2023",
       "type": "singleplayer",
       "summary": "经典俄罗斯方块，加入赛博朋克风格 UI、三种难度与丰富成就统计。",
       "tags": [
@@ -201,6 +206,7 @@
       "id": "com.bz.tictactoe",
       "name": "井字棋",
       "author": "BZ-Games Team",
+      "author_url": "https://github.com/baozha2023",
       "type": "multiplayer",
       "summary": "经典井字棋双人对战游戏，规则简单，适合快速联机对局。",
       "tags": [
@@ -228,9 +234,10 @@
       ]
     },
     {
-      "id": "com.bzgames.lord-of-glory-breaker",
+      "id": "com.bz.lord-of-glory-breaker",
       "name": "荣耀领主：破城者",
       "author": "BZ-Games Team",
+      "author_url": "https://github.com/baozha2023",
       "type": "singlemultiple",
       "summary": "参考皇室战争玩法的卡牌对战游戏，支持单人与双人对战。",
       "tags": [
@@ -250,9 +257,9 @@
           "version": "1.0.0",
           "description": "卡牌对战游戏，玩法参考皇室战争。双方各有3座塔，消耗圣水打出手牌部署兵种/建筑/法术，摧毁对方国王塔即获胜。",
           "platformVersion": ">=1.8.0",
-          "sha256": "b235aad4a02ff1bb83ab6f0cb23f6c23f47664de8062bc04813d9203c84f79eb",
-          "size": 134285401,
-          "publishedAt": "2026-05-23T04:03:28.000Z",
+          "sha256": "0905140ffcea3239bd631d911dbb21e6f9426dc3cacdae0233234fcee5754bb2",
+          "size": 134308491,
+          "publishedAt": "2026-05-27T07:54:08.000Z",
           "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85/v1.0.0/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85.zip"
         }
       ]
@@ -261,6 +268,7 @@
       "id": "com.bz.minesweeper",
       "name": "扫雷",
       "author": "BZ-Games Team",
+      "author_url": "https://github.com/baozha2023",
       "type": "singleplayer",
       "summary": "经典扫雷玩法，考验逻辑推理和风险判断能力。",
       "tags": [
@@ -289,6 +297,7 @@
       "id": "com.bz.fruitninja",
       "name": "水果忍者",
       "author": "BZ-Games Team",
+      "author_url": "https://github.com/baozha2023",
       "type": "singleplayer",
       "summary": "经典切水果玩法升级回归，新增生存模式和更炫酷的刀光表现。",
       "tags": [
@@ -335,6 +344,7 @@
       "id": "com.bz.connectfour",
       "name": "四子棋",
       "author": "BZ-Games Team",
+      "author_url": "https://github.com/baozha2023",
       "type": "multiplayer",
       "summary": "经典四子棋联机对战，率先连成四子即可获胜。",
       "tags": [
@@ -365,6 +375,7 @@
       "id": "com.bz.tankbattle",
       "name": "坦克大战",
       "author": "BZ-Games Team",
+      "author_url": "https://github.com/baozha2023",
       "type": "multiplayer",
       "summary": "多人在线坦克对战，支持大厅、地图投票与多模式战斗结算。",
       "tags": [
@@ -404,6 +415,7 @@
       "id": "com.bz.sokoban",
       "name": "推箱子",
       "author": "BZ-Games Team",
+      "author_url": "https://github.com/baozha2023",
       "type": "singleplayer",
       "summary": "经典推箱子闯关玩法，考验空间规划和路径思维。",
       "tags": [
@@ -432,6 +444,7 @@
       "id": "com.bz.gomoku",
       "name": "五子棋",
       "author": "BZ-Games Team",
+      "author_url": "https://github.com/baozha2023",
       "type": "multiplayer",
       "summary": "经典五子棋联机对战，黑白双方交替落子比拼策略。",
       "tags": [
@@ -459,9 +472,10 @@
       ]
     },
     {
-      "id": "com.game.gomokusingle",
+      "id": "com.bz.gomokusingle",
       "name": "五子棋（单机版）",
       "author": "BZ-Games Team",
+      "author_url": "https://github.com/baozha2023",
       "type": "singleplayer",
       "summary": "经典五子棋人机对战，新增究极模式并支持 AI 先手。",
       "tags": [
@@ -479,18 +493,18 @@
           "version": "1.0.0",
           "description": "经典五子棋人机对战游戏，使用 AI 算法进行智能对局。支持三种难度选择，炫酷的动画效果让你享受棋盘上的乐趣！",
           "platformVersion": ">=1.3.0",
-          "sha256": "49ad49950ce45db7b87af5d7af2c52366d7b71c7bc32d6ea20235c40017ba46c",
+          "sha256": "1bebb2e93fbffae44ce6c6b3119baa8a1cda78e63e9628d4992a7f65cbed7e55",
           "size": 2133139,
-          "publishedAt": "2026-05-23T04:12:39.000Z",
+          "publishedAt": "2026-05-27T07:55:36.000Z",
           "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BA%94%E5%AD%90%E6%A3%8B%E5%8D%95%E6%9C%BA%E7%89%88/v1.0.0/%E4%BA%94%E5%AD%90%E6%A3%8B%E5%8D%95%E6%9C%BA%E7%89%88.zip"
         },
         {
           "version": "2.0.0",
           "description": "经典五子棋人机对战游戏。新增究极模式，支持AI先手",
           "platformVersion": ">=1.4.0",
-          "sha256": "5ba6cbfb43f0d50fcc3b8ef26a0e842c42f3b9e432d98b1200e42d1ceb017d84",
+          "sha256": "c16035d58aa42e9913d03b688c624f0dee4ec881d48799ead005ad968bbf9825",
           "size": 2143278,
-          "publishedAt": "2026-05-23T04:15:21.000Z",
+          "publishedAt": "2026-05-27T07:59:18.000Z",
           "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BA%94%E5%AD%90%E6%A3%8B%E5%8D%95%E6%9C%BA%E7%89%88/v2.0.0/%E4%BA%94%E5%AD%90%E6%A3%8B%E5%8D%95%E6%9C%BA%E7%89%88.zip"
         }
       ]
@@ -499,6 +513,7 @@
       "id": "com.bz.element-match",
       "name": "灵韵消消：元素纪元",
       "author": "BZ-Games Team",
+      "author_url": "https://github.com/baozha2023",
       "type": "singleplayer",
       "summary": "中国风玄幻主题消除玩法，融合五行元素反应与灵韵收集系统。",
       "tags": [
@@ -536,6 +551,7 @@
       "id": "com.bz.xiangqi",
       "name": "中国象棋",
       "author": "BZ-Games Team",
+      "author_url": "https://github.com/baozha2023",
       "type": "multiplayer",
       "summary": "经典中国象棋联机对战，红黑双方展开策略与智慧较量。",
       "tags": [
@@ -566,6 +582,7 @@
       "id": "com.bz.whackamole",
       "name": "打地鼠",
       "author": "BZ-Games Team",
+      "author_url": "https://github.com/baozha2023",
       "type": "singlemultiple",
       "summary": "经典打地鼠玩法，支持多种模式与联机对战。",
       "tags": [

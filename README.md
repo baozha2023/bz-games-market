@@ -78,6 +78,7 @@ bz-games-market/
 | `id`            | string    | 是  | 唯一标识，反向域名格式，如 `com.bz.gamename`。**必须与安装包内 `game.json.id` 完全一致**      |
 | `name`          | string    | 是  | 游戏名称，最长 100 字符                                                       |
 | `author`        | string    | 是  | 作者/工作室名称                                                             |
+| `author_url`    | string    | 否  | 作者主页链接，在详情页展开时作者名称旁显示跳转图标                                            |
 | `type`          | string    | 是  | 类型：`singleplayer` / `multiplayer` / `singlemultiple` / `networkgame` |
 | `summary`       | string    | 是  | 简要介绍，最多 200 字符                                                       |
 | `tags`          | string[]  | 否  | 标签列表，用于市场内搜索                                                         |
@@ -140,6 +141,7 @@ bz-games-market/
 |-------------------|----------------------------------|
 | `name`            | Market Game 的 `name`             |
 | `author`          | Market Game 的 `author`           |
+| `author_url`      | Market Game 的 `author_url`       |
 | `type`            | Market Game 的 `type`             |
 | `description`     | Market Game 的 `summary`          |
 | `platformVersion` | 当前 Version 的 `platformVersion`  |
@@ -152,6 +154,7 @@ bz-games-market/
 | `name`               | string           | 游戏显示名称                   |
 | `description`        | string           | 游戏描述                     |
 | `author`             | string           | 作者/工作室名称                 |
+| `author_url`         | string           | 作者主页链接                   |
 | `platformVersion`    | string / [string, string] | 平台兼容版本范围     |
 | `entry`              | string           | 启动入口文件或模式（如 `index.html`、`game.exe`、`serve`、`url`） |
 | `web_url`            | string           | `entry=url` 时的远程网页地址      |
