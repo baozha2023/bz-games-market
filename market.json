@@ -16,7 +16,8 @@
     },
     {
       "marketId": "third-party",
-      "marketName": "第三方市场",
+      "marketName": "Third-party-market",
+      "coverUrl": "http://cdn.bzgames.top/bz-games-third-party-market/cover.png",
       "generatedAt": "2026-05-27T08:00:00.000Z",
       "repository": "https://github.com/baozha2023/bz-games-third-party-market.git",
       "branch": "master",
