@@ -100,12 +100,14 @@ bz-games-market/
 | `description`     | string  | 是  | 该版本描述（列表与详情页展示）                                     |
 | `platformVersion` | string  | 是  | 平台兼容版本，使用 `semver` 语法，如 `>=1.9.4`                   |
 | `downloadUrl`     | string  | 是  | 下载地址（支持 `.zip` 和 `.7z` 格式，平台根据后缀自动识别）                    |
-| `sha256`          | string  | 是  | 文件 SHA-256 校验值（64 位 hex，大小写不敏感）                     |
-| `size`            | number  | 是  | 文件大小（字节），用于展示下载体积与二次校验                              |
+| `sha256`          | string  | 否* | 文件 SHA-256 校验值（64 位 hex，大小写不敏感）。`downloadUrl` 为 GitHub Releases 直链时可省略                     |
+| `size`            | number  | 否* | 文件大小（字节），用于展示下载体积与二次校验。`downloadUrl` 为 GitHub Releases 直链时可省略                              |
 | `publishedAt`     | string  | 否  | 发布时间（ISO 8601），如 `"2024-01-15T08:00:00.000Z"`       |
 | `releaseNotes`    | string  | 否  | 详细更新说明                                              |
 | `isPrerelease`    | boolean | 否  | 是否为预发布版本；预发布版本不作为 `latestVersion`                   |
 | `gameManifest`    | object  | 否  | 游戏的 `game.json` 清单覆盖配置，用于无 `game.json` 的第三方游戏适配（详见下方说明） |
+
+> \* **GitHub Releases 自动校验**：若 `downloadUrl` 为 GitHub Releases 直链（格式 `https://github.com/{owner}/{repo}/releases/download/{tag}/{asset}`），平台会在下载前通过 GitHub REST API 自动获取对应 Asset 的 `digest`（SHA256）和 `size`，此时 `sha256` 和 `size` 字段可省略。非 GitHub URL 则必须填写。
 
 ## 平台校验规则
 
@@ -236,13 +238,15 @@ bz-games-market/<游戏名>/cover.png
 
 在 `market.json` 中添加或更新游戏条目，填入上一步获取的 `downloadUrl`、`sha256` 和 `size`。
 
+> **提示**：若 `downloadUrl` 为 GitHub Releases 直链，`sha256` 和 `size` 可省略，平台自动从 GitHub API 获取。
+
 **重要核对清单**：
 
 - [ ] `id` 与安装包内 `game.json.id` 完全一致
 - [ ] `version` 与安装包内 `game.json.version` 完全一致
 - [ ] `platformVersion` 使用 `semver` 语法（如 `>=1.9.4`）
-- [ ] `sha256` 为 64 位 hex 字符串
-- [ ] `size` 为精确字节数
+- [ ] `sha256` 为 64 位 hex 字符串（GitHub Releases 直链时可省略）
+- [ ] `size` 为精确字节数（GitHub Releases 直链时可省略）
 - [ ] 更新 `generatedAt` 为当前 UTC 时间
 - [ ] （第三方游戏）若安装包内无 `game.json`，需在对应版本中填写 `gameManifest` 字段
 

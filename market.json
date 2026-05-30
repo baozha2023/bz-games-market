@@ -21,7 +21,16 @@
       "generatedAt": "2026-05-27T08:00:00.000Z",
       "repository": "https://github.com/baozha2023/bz-games-third-party-market.git",
       "branch": "master",
-      "featured": false,
+      "featured": true,
+      "visibility": "public"
+    },
+    {
+      "marketId": "github-release-market",
+      "marketName": "GitHub Release Market",
+      "generatedAt": "2026-05-30T12:00:00.000Z",
+      "repository": "https://github.com/baozha2023/bz-games-github-release-market.git",
+      "branch": "master",
+      "featured": true,
       "visibility": "public"
     }
   ],
