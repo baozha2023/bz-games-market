@@ -75,13 +75,6 @@ def main() -> None:
     }
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
 
-    print("\n结果：")
-    print(json.dumps(result, ensure_ascii=False, indent=2))
-
-    print("\n当前时间（ISO 8601）：")
-    print(f"  {now}")
-
-    print("\n可直接粘贴到 market.json 的字段：")
     print(
         json.dumps(
             {
