@@ -474,9 +474,9 @@
           "version": "1.0.0",
           "description": "经典五子棋游戏，黑白双方交替落子，先连成五子者获胜",
           "platformVersion": ">=1.0.0",
-          "sha256": "920a2676234b6bc56f85703aa7e0007217c18ad39639c08714ed45d8d614045f",
-          "size": 1471793,
-          "publishedAt": "2026-05-17T08:31:46.000Z",
+          "sha256": "9fb44ac996259d47e488cac5192632a25305a94b13828fc1acc4c1b48cc82f91",
+          "size": 1473112,
+          "publishedAt": "2026-06-08T14:25:41.000Z",
           "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BA%94%E5%AD%90%E6%A3%8B/v1.0.0/%E4%BA%94%E5%AD%90%E6%A3%8B.zip"
         }
       ]
@@ -512,9 +512,9 @@
           "version": "2.0.0",
           "description": "经典五子棋人机对战游戏。新增究极模式，支持AI先手",
           "platformVersion": ">=1.4.0",
-          "sha256": "c16035d58aa42e9913d03b688c624f0dee4ec881d48799ead005ad968bbf9825",
-          "size": 2143278,
-          "publishedAt": "2026-05-27T07:59:18.000Z",
+          "sha256": "efac90f142ff7be8c24d752b397bdc29267b71dbb20409d17746cae0f9f15246",
+          "size": 2145816,
+          "publishedAt": "2026-06-08T14:27:42.000Z",
           "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BA%94%E5%AD%90%E6%A3%8B%E5%8D%95%E6%9C%BA%E7%89%88/v2.0.0/%E4%BA%94%E5%AD%90%E6%A3%8B%E5%8D%95%E6%9C%BA%E7%89%88.zip"
         }
       ]
