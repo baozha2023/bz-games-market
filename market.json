@@ -423,10 +423,10 @@
           "version": "2.5.0",
           "description": "多人在线坦克大战，支持大厅、地图投票与战斗结算流程",
           "platformVersion": ">=2.3.7",
-          "sha256": "7b17ed2ccdb7af0ed27672969b23de665daf358d74132c2e9b7cc2c27d1165c6",
-          "size": 77353944,
-          "publishedAt": "2026-06-09T04:12:41.000Z",
-          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98/v2.5.0/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98.zip"
+          "sha256": "70eb5ca36e7ce08c9a4b7ec00479071fb8a999108bacd199a10cde89f0924d9a",
+          "size": 77354095,
+          "publishedAt": "2026-06-09T04:30:21.000Z",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market//v2.5.0/.zip"
         }
       ]
     },
