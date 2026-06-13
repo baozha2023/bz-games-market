@@ -656,6 +656,38 @@
           "publishedAt": "2026-06-03T04:00:38.000Z"
         }
       ]
+    },
+    {
+      "id": "com.bz.drawguess",
+      "name": "你画我猜",
+      "author": "BZ-Games Team",
+      "author_url": "https://github.com/baozha2023",
+      "type": "multiplayer",
+      "summary": "多人联机你画我猜游戏，一人作画众人猜词，支持 1~8 人同房竞技。",
+      "tags": [
+        "休闲",
+        "画画",
+        "多人",
+        "派对"
+      ],
+      "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BD%A0%E7%94%BB%E6%88%91%E7%8C%9C/icon.png",
+      "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BD%A0%E7%94%BB%E6%88%91%E7%8C%9C/cover.png",
+      "featured": false,
+      "visibility": "public",
+      "minPlayers": 1,
+      "maxPlayers": 8,
+      "latestVersion": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "description": "多人联机你画我猜游戏，一人作画众人猜词。支持 1~8 人同房、10 项成就与 9 项数据统计。",
+          "platformVersion": ">=2.3.4",
+          "sha256": "21ffa217bd03d73f585452fee40a55425a9efb6e0dac8c24e28cb211ee391913",
+          "size": 150891249,
+          "publishedAt": "2026-06-13T15:35:09.000Z",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BD%A0%E7%94%BB%E6%88%91%E7%8C%9C/v1.0.0/%E4%BD%A0%E7%94%BB%E6%88%91%E7%8C%9C.zip"
+        }
+      ]
     }
   ]
 }
