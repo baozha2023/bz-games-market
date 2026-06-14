@@ -296,10 +296,10 @@
           "version": "1.0.0",
           "description": "经典扫雷游戏 - 揭开格子，避开地雷，考验你的逻辑推理能力！",
           "platformVersion": ">=1.2.0",
-          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%AB%E9%9B%B7/v1.0.0/%E6%89%AB%E9%9B%B7.zip",
-          "sha256": "87de5f1730771e2fca5e7f461e35953e73321baf34f4662b1905e5374ac6ab99",
-          "size": 1583128,
-          "publishedAt": "2026-05-15T12:00:00.000Z"
+          "sha256": "df6785170dbcb0a0cee2eff71dd10502e05ed6a34c4abef983766f8eebf07674",
+          "size": 1584569,
+          "publishedAt": "2026-06-14T07:49:17.000Z",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%AB%E9%9B%B7/v1.0.0/%E6%89%AB%E9%9B%B7.zip"
         }
       ]
     },
