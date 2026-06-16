@@ -482,10 +482,10 @@
         {
           "version": "1.0.0",
           "description": "经典五子棋游戏，黑白双方交替落子，先连成五子者获胜",
-          "platformVersion": ">=1.0.0",
-          "sha256": "9fb44ac996259d47e488cac5192632a25305a94b13828fc1acc4c1b48cc82f91",
-          "size": 1473112,
-          "publishedAt": "2026-06-08T14:25:41.000Z",
+          "platformVersion": ">=1.2.0",
+          "sha256": "64c20a50f20d52aeda16a210eef7571140c0b61bf1bd29d195294ced5922d96d",
+          "size": 1473180,
+          "publishedAt": "2026-06-16T10:29:50.000Z",
           "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BA%94%E5%AD%90%E6%A3%8B/v1.0.0/%E4%BA%94%E5%AD%90%E6%A3%8B.zip"
         }
       ]
