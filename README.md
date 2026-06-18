@@ -25,6 +25,9 @@ bz-games-market/
   "marketId": "official",
   "marketName": "BZ Games Market",
   "generatedAt": "2026-05-22T04:21:02.000Z",
+  "updatedAt": "2026-06-16T10:32:44.000Z",
+  "repository": "https://github.com/baozha2023/bz-games-market.git",
+  "author": "baozha2023",
   "sources": [
     {
       "marketId": "official",
@@ -41,7 +44,7 @@ bz-games-market/
 }
 ```
 
-> **注意**：每次更新 `market.json` 后，需同步更新 `generatedAt` 为当前 UTC 时间。
+> **注意**：每次更新 `market.json` 后，需同步更新 `generatedAt` 和 `updatedAt` 为当前 UTC 时间。
 >
 > `sources` 数组和 `games` 数组**共存于同一文件**：平台通过 `MarketDirectorySchema` 解析 `sources` 展示市场列表（一级界面），通过
 `MarketIndexSchema` 解析 `games` 展示该市场的游戏（二级界面）。
@@ -53,9 +56,12 @@ bz-games-market/
 | `schemaVersion` | string   | 是  | 索引格式版本，如 `"1.0.0"`                    |
 | `marketId`      | string   | 是  | 当前市场的唯一标识（与 `sources[0].marketId` 一致） |
 | `marketName`    | string   | 是  | 当前市场的显示名称                             |
-| `generatedAt`   | string   | 是  | 索引生成时间（ISO 8601），每次更新需刷新              |
-| `sources`       | Source[] | 是  | 市场源列表，至少 1 项                          |
-| `games`         | Game[]   | 是  | 游戏列表（与 `sources[0]` 对应）               |
+| `generatedAt`   | string   | 是  | 索引生成时间（ISO 8601），首次创建时填写                    |
+| `updatedAt`     | string   | 是  | 索引最后更新时间（ISO 8601），每次更新需刷新                  |
+| `repository`    | string   | 否  | 该市场的 GitHub 仓库地址                                  |
+| `author`        | string   | 否  | 该市场的维护作者                                          |
+| `sources`       | Source[] | 是  | 市场源列表，至少 1 项                                     |
+| `games`         | Game[]   | 是  | 游戏列表（与 `sources[0]` 对应）                          |
 
 ### Source 字段（sources 数组元素）
 
