@@ -716,7 +716,7 @@
           "version": "1.0.0",
           "description": "经典跳棋联机对战 — 1~6 人轮流跳跃移动，最先将棋子全部跳到对面的玩家获胜！",
           "platformVersion": ">=2.3.7",
-          "sha256": "78dcf7368ec31c1148dc159d32b29e24e091367c3bd435f66efca03ec0aab285",
+          "sha256": "ef0505e5e90496f231e13f557e206a8d1213541adb6b08dae228508fea22be6c",
           "size": 4318704,
           "publishedAt": "2026-07-30T09:09:24.000Z",
           "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E8%B7%B3%E6%A3%8B/v1.0.0/%E8%B7%B3%E6%A3%8B.zip"
