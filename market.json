@@ -3,7 +3,7 @@
   "marketId": "official",
   "marketName": "BZ Games Market",
   "generatedAt": "2026-05-15T12:00:00.000Z",
-  "updatedAt": "2026-07-30T09:09:24.000Z",
+  "updatedAt": "2026-08-03T10:41:56.000Z",
   "repository": "https://github.com/baozha2023/bz-games-market.git",
   "author": "baozha2023",
   "sources": [
@@ -716,9 +716,9 @@
           "version": "1.0.0",
           "description": "经典跳棋联机对战 — 1~6 人轮流跳跃移动，最先将棋子全部跳到对面的玩家获胜！",
           "platformVersion": ">=2.3.7",
-          "sha256": "ef0505e5e90496f231e13f557e206a8d1213541adb6b08dae228508fea22be6c",
-          "size": 4318704,
-          "publishedAt": "2026-07-30T09:09:24.000Z",
+          "sha256": "7d79d82ae5bf6c228b4ed27f98600bdff619015393dfe45369042e668d7d1094",
+          "size": 4319164,
+          "publishedAt": "2026-08-03T10:41:56.000Z",
           "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E8%B7%B3%E6%A3%8B/v1.0.0/%E8%B7%B3%E6%A3%8B.zip"
         }
       ]
