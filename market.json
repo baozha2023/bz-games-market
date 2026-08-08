@@ -3,7 +3,7 @@
   "marketId": "official",
   "marketName": "BZ Games Market",
   "generatedAt": "2026-05-15T12:00:00.000Z",
-  "updatedAt": "2026-08-08T17:05:23.000Z",
+  "updatedAt": "2026-08-08T18:51:09.000Z",
   "repository": "https://github.com/baozha2023/bz-games-market.git",
   "author": "baozha2023",
   "sources": [
@@ -747,7 +747,7 @@
         {
           "version": "1.0.0",
           "description": "旋转轨道护盾，守护星核 — 独自或与最多三名伙伴挑战无限陨石潮！",
-          "publishedAt": "2026-08-08T17:05:23.000Z",
+          "publishedAt": "2026-08-08T18:51:09.000Z",
           "platformVersion": ">=3.1.0",
           "downloadUrl": "games.bzgames.top/com.bz.star-guardian/1.0.0/package/%E6%98%9F%E8%BD%A8%E5%AE%88%E6%9C%9B.zip",
           "sha256": "8b4a06ca05c95a396c9bd197a32794eb974f90a530c4e79487a71378e36f0c6b",
