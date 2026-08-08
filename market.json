@@ -2,7 +2,7 @@
   "schemaVersion": "1.3.0",
   "marketId": "official",
   "marketName": "BZ Games Market",
-  "generatedAt": "2026-05-15T12:00:00.000Z",
+  "generatedAt": "2026-08-08T17:05:23.000Z",
   "updatedAt": "2026-08-03T10:41:56.000Z",
   "repository": "https://github.com/baozha2023/bz-games-market.git",
   "author": "baozha2023",
@@ -726,10 +726,6 @@
     {
       "id": "com.bz.star-guardian",
       "name": "星轨守望",
-      "author": "BZ-Games Team",
-      "author_url": "https://github.com/baozha2023",
-      "type": "singlemultiple",
-      "summary": "旋转轨道护盾，守护星核，独自或与最多三名伙伴挑战无限陨石潮。",
       "tags": [
         "塔防",
         "动作",
@@ -737,22 +733,25 @@
         "科幻",
         "联机"
       ],
+      "type": "singlemultiple",
+      "author": "BZ-Games Team",
       "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E6%98%9F%E8%BD%A8%E5%AE%88%E6%9C%9B/icon.png",
+      "summary": "旋转轨道护盾，守护星核，独自或与最多三名伙伴挑战无限陨石潮。",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E6%98%9F%E8%BD%A8%E5%AE%88%E6%9C%9B/cover.png",
       "featured": true,
-      "visibility": "public",
-      "minPlayers": 1,
       "maxPlayers": 4,
+      "minPlayers": 1,
+      "visibility": "public",
       "latestVersion": "1.0.0",
       "versions": [
         {
           "version": "1.0.0",
           "description": "旋转轨道护盾，守护星核 — 独自或与最多三名伙伴挑战无限陨石潮！",
+          "publishedAt": "2026-08-08T17:05:23.000Z",
           "platformVersion": ">=3.1.0",
-          "downloadUrl": "games.bzgames.top/00522f26-8734-4925-86d2-2981befe0b01/%C3%A6%C2%98%C2%9F%C3%A8%C2%BD%C2%A8%C3%A5%C2%AE%C2%88%C3%A6%C2%9C%C2%9B.zip",
-          "sha256": "c1ea9c0fa622f5298c3d241f521bb0f5f31eef6ae8703a8d4dfbc2a7542d5f3b",
-          "size": 4869830,
-          "publishedAt": "2026-08-03T10:41:56.000Z"
+          "downloadUrl": "games.bzgames.top/com.bz.star-guardian/1.0.0/package/%E6%98%9F%E8%BD%A8%E5%AE%88%E6%9C%9B.zip",
+          "sha256": "8b4a06ca05c95a396c9bd197a32794eb974f90a530c4e79487a71378e36f0c6b",
+          "size": 4869835
         }
       ]
     }
