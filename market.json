@@ -3,7 +3,7 @@
   "marketId": "official",
   "marketName": "BZ Games Market",
   "generatedAt": "2026-05-15T12:00:00.000Z",
-  "updatedAt": "2026-08-08T18:51:09.000Z",
+  "updatedAt": "2026-08-16T17:27:06.000Z",
   "repository": "https://github.com/baozha2023/bz-games-market.git",
   "author": "baozha2023",
   "sources": [
@@ -723,6 +723,37 @@
           "downloadUrl": "games.bzgames.top/com.bz.star-guardian/1.0.0/package/%E6%98%9F%E8%BD%A8%E5%AE%88%E6%9C%9B.zip",
           "sha256": "8b4a06ca05c95a396c9bd197a32794eb974f90a530c4e79487a71378e36f0c6b",
           "size": 4869835
+        }
+      ]
+    },
+    {
+      "id": "com.bz.jump3d",
+      "name": "云端疾跃",
+      "tags": [
+        "3D",
+        "多人",
+        "跑酷",
+        "竞速"
+      ],
+      "type": "singlemultiple",
+      "author": "BZ-Games Team",
+      "iconUrl": "games.bzgames.top/com.bz.jump3d/1.0.0/icon/icon.png",
+      "summary": "第一人称云端跑酷：用鼠标观察、WASD 移动、空格跳跃，独自训练或与最多三位伙伴实时竞速。",
+      "coverUrl": "games.bzgames.top/com.bz.jump3d/1.0.0/cover/cover.png",
+      "featured": true,
+      "maxPlayers": 4,
+      "minPlayers": 2,
+      "visibility": "public",
+      "latestVersion": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "description": "第一人称云端跑酷，鼠标观察、WASD 移动、空格跳跃，收录云端疾跃、蓄力跳、蜂窝迷图、极限冲刺四大模式，支持单人训练与最多四人实时联机竞速，含 15 项成就与完整统计。",
+          "publishedAt": "2026-08-16T17:27:06.000Z",
+          "platformVersion": ">=3.1.0",
+          "downloadUrl": "games.bzgames.top/com.bz.jump3d/1.0.0/package/%E8%B7%B3%E4%B8%80%E8%B7%B33D.zip",
+          "sha256": "b00a0d84c5a6e1bd98f08282029cc1521dcd72a6bd506f38b877ff1cd2d8391c",
+          "size": 41846427
         }
       ]
     }
