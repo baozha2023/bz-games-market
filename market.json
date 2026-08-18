@@ -3,7 +3,7 @@
   "marketId": "official",
   "marketName": "BZ Games Market",
   "generatedAt": "2026-05-15T12:00:00.000Z",
-  "updatedAt": "2026-08-16T17:27:06.000Z",
+  "updatedAt": "2026-08-18T07:22:10.000Z",
   "repository": "https://github.com/baozha2023/bz-games-market.git",
   "author": "baozha2023",
   "sources": [
@@ -754,6 +754,33 @@
           "downloadUrl": "games.bzgames.top/com.bz.jump3d/1.0.0/package/%E8%B7%B3%E4%B8%80%E8%B7%B33D.zip",
           "sha256": "0ecc0c558fbacf3a812740d98c36cc512f73e8848fc36062d5c9dcd304bb8b84",
           "size": 41847417
+        }
+      ]
+    },
+    {
+      "id": "com.bz.oneline",
+      "name": "一笔到底",
+      "tags": [
+        "益智",
+        "解谜",
+        "思维"
+      ],
+      "type": "singleplayer",
+      "author": "BZ-Games Team",
+      "iconUrl": "games.bzgames.top/com.bz.oneline/1.0.0/icon/icon.png",
+      "summary": "一笔画完所有边的欧拉路径解谜小游戏：拖动连线，每条边只能走一次，从起点一笔到底！",
+      "coverUrl": "games.bzgames.top/com.bz.oneline/1.0.0/cover/cover.png",
+      "visibility": "public",
+      "latestVersion": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "description": "《一笔到底》是一款主打欧拉路径（一笔画）的休闲益智小游戏。在由节点与连线构成的图形中，拖动手指或鼠标，让每一笔都不重复、不遗漏，从起点一气呵成连到终点。游戏内置 40 个精心设计的关卡，难度循序渐进，并配有\"无路可走\"提示与一键重来，随时来一局烧脑放松。",
+          "publishedAt": "2026-08-18T07:22:10.000Z",
+          "platformVersion": ">=3.1.0",
+          "downloadUrl": "games.bzgames.top/com.bz.oneline/1.0.0/package/%E4%B8%80%E7%AC%94%E5%88%B0%E5%BA%95.zip",
+          "sha256": "764bc410d96bc6147c9223668c5a0a75a68169007378e71be50bad980c489e6d",
+          "size": 5963323
         }
       ]
     }
