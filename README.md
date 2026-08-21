@@ -179,11 +179,12 @@ bz-games-market/
 | `cover`               | string                    | 封面文件路径                                             |
 | `video`               | string                    | 预览视频文件路径                                           |
 | `encryptLocalStorage` | boolean                   | 是否加密本地存储                                           |
+| `windowedFullscreen`  | boolean                   | 仅 Web 游戏可用；启动时自动最大化窗口，默认 `false`，用户仍可还原窗口             |
 | `type`                | string                    | 游戏类型，同 Market Game 的 `type`                        |
 | `statistics`          | array                     | 统计指标列表                                             |
 | `multiplayer`         | object                    | 多人游戏配置 `{minPlayers, maxPlayers}`                  |
-| `args`                | string[]                  | Native 游戏启动参数                                      |
-| `env`                 | object                    | Native 游戏环境变量                                      |
+| `args`                | string[]                  | 仅 Native 游戏可用的启动参数                              |
+| `env`                 | object                    | 仅 Native 游戏可用的环境变量                              |
 | `achievements`        | array                     | 成就列表定义                                             |
 
 **示例**：一个没有 `game.json` 的第三方游戏版本配置：

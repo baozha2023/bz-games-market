@@ -3,7 +3,7 @@
   "marketId": "official",
   "marketName": "BZ Games Market",
   "generatedAt": "2026-05-15T12:00:00.000Z",
-  "updatedAt": "2026-08-18T07:22:10.000Z",
+  "updatedAt": "2026-08-21T16:27:00.000Z",
   "repository": "https://github.com/baozha2023/bz-games-market.git",
   "author": "baozha2023",
   "sources": [
@@ -744,8 +744,17 @@
       "maxPlayers": 4,
       "minPlayers": 2,
       "visibility": "public",
-      "latestVersion": "1.0.0",
+      "latestVersion": "2.0.0",
       "versions": [
+        {
+          "version": "2.0.0",
+          "description": "第一人称云端竞速全面升级，新增回声深渊、浮空迷宫、相位天梯三大模式，收录七种差异化玩法；支持最多四人实时联机，加入攻击、碰撞、二段跳、迷宫探索与动态相位挑战，新增精致服装、背饰与帽子搭配系统，更完整的成就统计。",
+          "publishedAt": "2026-08-21T16:27:00.000Z",
+          "platformVersion": ">=3.2.3",
+          "downloadUrl": "games.bzgames.top/com.bz.jump3d/2.0.0/package/%E8%B7%B3%E4%B8%80%E8%B7%B33D.zip",
+          "sha256": "4bc4574c5db5cf87e2c024f8bcd60b67b6772b5af8511b371ff6d81876be35a9",
+          "size": 46322299
+        },
         {
           "version": "1.0.0",
           "description": "第一人称云端跑酷，鼠标观察、WASD 移动、空格跳跃，收录云端疾跃、蓄力跳、蜂窝迷图、极限冲刺四大模式，支持单人训练与最多四人实时联机竞速，含 15 项成就与完整统计。",
