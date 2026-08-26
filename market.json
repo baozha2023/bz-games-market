@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "1.3.0",
+  "schemaVersion": 2,
   "marketId": "official",
   "marketName": "BZ Games Market",
-  "generatedAt": "2026-05-15T12:00:00.000Z",
-  "updatedAt": "2026-08-21T16:27:00.000Z",
+  "generatedAt": "2026-05-15T12:00:00Z",
+  "updatedAt": "2026-08-26T13:31:41.932Z",
   "repository": "https://github.com/baozha2023/bz-games-market.git",
   "author": "baozha2023",
   "sources": [
@@ -11,7 +11,7 @@
       "marketId": "official",
       "marketName": "BZ Games Market",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/cover.png",
-      "generatedAt": "2026-05-15T12:00:00.000Z",
+      "generatedAt": "2026-05-15T12:00:00Z",
       "repository": "https://github.com/baozha2023/bz-games-market.git",
       "branch": "master",
       "featured": true,
@@ -21,7 +21,7 @@
       "marketId": "third-party",
       "marketName": "Third-party-market",
       "coverUrl": "http://cdn.bzgames.top/bz-games-third-party-market/cover.png",
-      "generatedAt": "2026-05-27T08:00:00.000Z",
+      "generatedAt": "2026-05-27T08:00:00Z",
       "repository": "https://github.com/baozha2023/bz-games-third-party-market.git",
       "branch": "master",
       "featured": true,
@@ -31,7 +31,7 @@
       "marketId": "github-release-market",
       "marketName": "GitHub Release Market",
       "coverUrl": "http://cdn.bzgames.top/bz-games-github-release-market/cover.png",
-      "generatedAt": "2026-05-30T12:00:00.000Z",
+      "generatedAt": "2026-05-30T12:00:00Z",
       "repository": "https://github.com/baozha2023/bz-games-github-release-market.git",
       "branch": "master",
       "featured": true,
@@ -41,16 +41,9 @@
   "games": [
     {
       "id": "com.bz.2048",
-      "name": "2048",
       "author": "BZ-Games Team",
       "author_url": "https://github.com/baozha2023",
       "type": "singleplayer",
-      "summary": "经典 2048 数字益智游戏，合并相同数字并挑战合成 2048。",
-      "tags": [
-        "益智",
-        "数字",
-        "单人"
-      ],
       "iconUrl": "http://cdn.bzgames.top/bz-games-market/2048/icon.png",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/2048/cover.png",
       "featured": false,
@@ -59,27 +52,36 @@
       "versions": [
         {
           "version": "1.0.0",
-          "description": "经典 2048 数字益智游戏 - 合并相同数字，合成 2048！",
           "platformVersion": ">=1.0.0",
           "downloadUrl": "http://cdn.bzgames.top/bz-games-market/2048/v1.0.0/2048.zip",
           "sha256": "b8111136a43e2deaff137bcb1b095205c5788096f69800230fdc695061ef78e0",
           "size": 1100914,
-          "publishedAt": "2026-05-15T12:00:00.000Z"
+          "publishedAt": "2026-05-15T12:00:00Z",
+          "localizations": {
+            "zh-CN": {
+              "description": "经典 2048 数字益智游戏 - 合并相同数字，合成 2048！"
+            }
+          }
         }
-      ]
+      ],
+      "defaultLocale": "zh-CN",
+      "localizations": {
+        "zh-CN": {
+          "name": "2048",
+          "summary": "经典 2048 数字益智游戏，合并相同数字并挑战合成 2048。",
+          "tags": [
+            "益智",
+            "数字",
+            "单人"
+          ]
+        }
+      }
     },
     {
       "id": "com.bz.birdfly",
-      "name": "Bird Fly",
       "author": "BZ-Games Team",
       "author_url": "https://github.com/baozha2023",
       "type": "singlemultiple",
-      "summary": "飞鸟穿越障碍的街机游戏，支持动态天气、单人飞行与双人对战。",
-      "tags": [
-        "街机",
-        "飞行",
-        "双人"
-      ],
       "iconUrl": "http://cdn.bzgames.top/bz-games-market/Bird%20Fly/icon.png",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/Bird%20Fly/cover.png",
       "featured": true,
@@ -90,36 +92,49 @@
       "versions": [
         {
           "version": "1.0.0",
-          "description": "一款飞鸟穿越障碍的街机游戏，支持动态天气系统、单人飞行与双人实时对战。",
           "platformVersion": ">=1.9.4",
           "downloadUrl": "http://cdn.bzgames.top/bz-games-market/Bird%20Fly/v1.0.0/bird_fly.zip",
           "sha256": "b1cad779eb4e2937126e48a9f8a502d475859ea18e0ab9b21513641605494a64",
           "size": 54992646,
-          "publishedAt": "2026-05-15T12:00:00.000Z"
+          "publishedAt": "2026-05-15T12:00:00Z",
+          "localizations": {
+            "zh-CN": {
+              "description": "一款飞鸟穿越障碍的街机游戏，支持动态天气系统、单人飞行与双人实时对战。"
+            }
+          }
         },
         {
           "version": "2.0.0",
-          "description": "穿越风暴、沙尘与迷雾，在动态天气中操控飞鸟躲避管道。全新护盾道具、重制成就系统、双人对战。",
           "platformVersion": ">=1.9.4",
           "sha256": "a4b24d78deb6f1efe51907a1770fc0df4c1643b4e82707ea55c15683914eea67",
           "size": 93742192,
-          "publishedAt": "2026-05-23T14:23:08.000Z",
-          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/Bird%20Fly/v2.0.0/bird_fly.zip"
+          "publishedAt": "2026-05-23T14:23:08Z",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/Bird%20Fly/v2.0.0/bird_fly.zip",
+          "localizations": {
+            "zh-CN": {
+              "description": "穿越风暴、沙尘与迷雾，在动态天气中操控飞鸟躲避管道。全新护盾道具、重制成就系统、双人对战。"
+            }
+          }
         }
-      ]
+      ],
+      "defaultLocale": "zh-CN",
+      "localizations": {
+        "zh-CN": {
+          "name": "Bird Fly",
+          "summary": "飞鸟穿越障碍的街机游戏，支持动态天气、单人飞行与双人对战。",
+          "tags": [
+            "街机",
+            "飞行",
+            "双人"
+          ]
+        }
+      }
     },
     {
       "id": "com.bz.landlord",
-      "name": "斗地主",
       "author": "BZ-Games Team",
       "author_url": "https://github.com/baozha2023",
       "type": "multiplayer",
-      "summary": "经典斗地主扑克玩法，支持 2 至 3 人联机对战。",
-      "tags": [
-        "棋牌",
-        "卡牌",
-        "联机"
-      ],
       "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E6%96%97%E5%9C%B0%E4%B8%BB/icon.png",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E6%96%97%E5%9C%B0%E4%B8%BB/cover.png",
       "featured": false,
@@ -130,27 +145,36 @@
       "versions": [
         {
           "version": "1.0.0",
-          "description": "经典斗地主扑克游戏 - 支持3人联机对战！",
           "platformVersion": ">=1.2.0",
           "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E6%96%97%E5%9C%B0%E4%B8%BB/v1.0.0/%E6%96%97%E5%9C%B0%E4%B8%BB.zip",
           "sha256": "32d41811d8abfe6199e5572c6dac0867e0415db6920f3db42159dfd9be37471b",
           "size": 7414213,
-          "publishedAt": "2026-05-15T12:00:00.000Z"
+          "publishedAt": "2026-05-15T12:00:00Z",
+          "localizations": {
+            "zh-CN": {
+              "description": "经典斗地主扑克游戏 - 支持3人联机对战！"
+            }
+          }
         }
-      ]
+      ],
+      "defaultLocale": "zh-CN",
+      "localizations": {
+        "zh-CN": {
+          "name": "斗地主",
+          "summary": "经典斗地主扑克玩法，支持 2 至 3 人联机对战。",
+          "tags": [
+            "棋牌",
+            "卡牌",
+            "联机"
+          ]
+        }
+      }
     },
     {
       "id": "com.bz.tetris",
-      "name": "俄罗斯方块",
       "author": "BZ-Games Team",
       "author_url": "https://github.com/baozha2023",
       "type": "singleplayer",
-      "summary": "经典俄罗斯方块，加入赛博朋克风格 UI、三种难度与丰富成就统计。",
-      "tags": [
-        "益智",
-        "街机",
-        "单人"
-      ],
       "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97/icon.png",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97/cover.png",
       "featured": false,
@@ -159,45 +183,62 @@
       "versions": [
         {
           "version": "1.0.0",
-          "description": "经典俄罗斯方块游戏",
           "platformVersion": ">=1.0.0",
           "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97/v1.0.0/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97.zip",
           "sha256": "31185ca4c23ec42ac1674341be6b460894a926a7505e5bb04ba5e7da00ac594c",
           "size": 1837806,
-          "publishedAt": "2026-05-15T12:00:00.000Z"
+          "publishedAt": "2026-05-15T12:00:00Z",
+          "localizations": {
+            "zh-CN": {
+              "description": "经典俄罗斯方块游戏"
+            }
+          }
         },
         {
           "version": "2.0.0",
-          "description": "经典俄罗斯方块游戏 - 全新升级！新增音效、增强动画",
           "platformVersion": ">=1.0.0",
           "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97/v2.0.0/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97.zip",
           "sha256": "86cbd0d269b9bfdfc76a7abb8ba2b7f5ac9df4709426047072a473093552df4d",
           "size": 1848588,
-          "publishedAt": "2026-05-15T12:00:00.000Z"
+          "publishedAt": "2026-05-15T12:00:00Z",
+          "localizations": {
+            "zh-CN": {
+              "description": "经典俄罗斯方块游戏 - 全新升级！新增音效、增强动画"
+            }
+          }
         },
         {
           "version": "3.0.0",
-          "description": "经典俄罗斯方块游戏 - 赛博朋克风格 UI，三种难度模式，完善的成就与统计系统",
           "platformVersion": ">=1.3.0",
           "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97/v3.0.0/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97.zip",
           "sha256": "19be5cf4b90070bed179080628f9f5e66a1400d2eb43cc5e54a7a7ba9920ea98",
           "size": 2488602,
-          "publishedAt": "2026-05-15T12:00:00.000Z"
+          "publishedAt": "2026-05-15T12:00:00Z",
+          "localizations": {
+            "zh-CN": {
+              "description": "经典俄罗斯方块游戏 - 赛博朋克风格 UI，三种难度模式，完善的成就与统计系统"
+            }
+          }
         }
-      ]
+      ],
+      "defaultLocale": "zh-CN",
+      "localizations": {
+        "zh-CN": {
+          "name": "俄罗斯方块",
+          "summary": "经典俄罗斯方块，加入赛博朋克风格 UI、三种难度与丰富成就统计。",
+          "tags": [
+            "益智",
+            "街机",
+            "单人"
+          ]
+        }
+      }
     },
     {
       "id": "com.bz.tictactoe",
-      "name": "井字棋",
       "author": "BZ-Games Team",
       "author_url": "https://github.com/baozha2023",
       "type": "multiplayer",
-      "summary": "经典井字棋双人对战游戏，规则简单，适合快速联机对局。",
-      "tags": [
-        "棋牌",
-        "双人",
-        "联机"
-      ],
       "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BA%95%E5%AD%97%E6%A3%8B/icon.png",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BA%95%E5%AD%97%E6%A3%8B/cover.png",
       "featured": false,
@@ -208,27 +249,36 @@
       "versions": [
         {
           "version": "1.0.0",
-          "description": "经典井字棋游戏",
           "platformVersion": ">=1.2.0",
           "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BA%95%E5%AD%97%E6%A3%8B/v1.0.0/%E4%BA%95%E5%AD%97%E6%A3%8B.zip",
           "sha256": "60ac34e2391c7d9d60a2b848be0ce64cbd226b458f4950b1aad87c3f48f2cc67",
           "size": 1401041,
-          "publishedAt": "2026-05-15T12:00:00.000Z"
+          "publishedAt": "2026-05-15T12:00:00Z",
+          "localizations": {
+            "zh-CN": {
+              "description": "经典井字棋游戏"
+            }
+          }
         }
-      ]
+      ],
+      "defaultLocale": "zh-CN",
+      "localizations": {
+        "zh-CN": {
+          "name": "井字棋",
+          "summary": "经典井字棋双人对战游戏，规则简单，适合快速联机对局。",
+          "tags": [
+            "棋牌",
+            "双人",
+            "联机"
+          ]
+        }
+      }
     },
     {
       "id": "com.bz.lord-of-glory-breaker",
-      "name": "荣耀领主：破城者",
       "author": "BZ-Games Team",
       "author_url": "https://github.com/baozha2023",
       "type": "singlemultiple",
-      "summary": "参考皇室战争玩法的卡牌对战游戏，支持单人与双人对战。",
-      "tags": [
-        "卡牌对战",
-        "策略",
-        "联机"
-      ],
       "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85/icon.png",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85/cover.png",
       "featured": true,
@@ -239,27 +289,36 @@
       "versions": [
         {
           "version": "1.0.0",
-          "description": "卡牌对战游戏，玩法参考皇室战争。双方各有3座塔，消耗圣水打出手牌部署兵种/建筑/法术，摧毁对方国王塔即获胜。",
           "platformVersion": ">=1.8.0",
           "sha256": "0905140ffcea3239bd631d911dbb21e6f9426dc3cacdae0233234fcee5754bb2",
           "size": 134308491,
-          "publishedAt": "2026-05-27T07:54:08.000Z",
-          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85/v1.0.0/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85.zip"
+          "publishedAt": "2026-05-27T07:54:08Z",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85/v1.0.0/%E8%8D%A3%E8%80%80%E9%A2%86%E4%B8%BB%EF%BC%9A%E7%A0%B4%E5%9F%8E%E8%80%85.zip",
+          "localizations": {
+            "zh-CN": {
+              "description": "卡牌对战游戏，玩法参考皇室战争。双方各有3座塔，消耗圣水打出手牌部署兵种/建筑/法术，摧毁对方国王塔即获胜。"
+            }
+          }
         }
-      ]
+      ],
+      "defaultLocale": "zh-CN",
+      "localizations": {
+        "zh-CN": {
+          "name": "荣耀领主：破城者",
+          "summary": "参考皇室战争玩法的卡牌对战游戏，支持单人与双人对战。",
+          "tags": [
+            "卡牌对战",
+            "策略",
+            "联机"
+          ]
+        }
+      }
     },
     {
       "id": "com.bz.minesweeper",
-      "name": "扫雷",
       "author": "BZ-Games Team",
       "author_url": "https://github.com/baozha2023",
       "type": "singleplayer",
-      "summary": "经典扫雷玩法，考验逻辑推理和风险判断能力。",
-      "tags": [
-        "益智",
-        "经典",
-        "单人"
-      ],
       "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%AB%E9%9B%B7/icon.png",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%AB%E9%9B%B7/cover.png",
       "featured": false,
@@ -268,27 +327,36 @@
       "versions": [
         {
           "version": "1.0.0",
-          "description": "经典扫雷游戏 - 揭开格子，避开地雷，考验你的逻辑推理能力！",
           "platformVersion": ">=1.2.0",
           "sha256": "df6785170dbcb0a0cee2eff71dd10502e05ed6a34c4abef983766f8eebf07674",
           "size": 1584569,
-          "publishedAt": "2026-06-14T07:49:17.000Z",
-          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%AB%E9%9B%B7/v1.0.0/%E6%89%AB%E9%9B%B7.zip"
+          "publishedAt": "2026-06-14T07:49:17Z",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%AB%E9%9B%B7/v1.0.0/%E6%89%AB%E9%9B%B7.zip",
+          "localizations": {
+            "zh-CN": {
+              "description": "经典扫雷游戏 - 揭开格子，避开地雷，考验你的逻辑推理能力！"
+            }
+          }
         }
-      ]
+      ],
+      "defaultLocale": "zh-CN",
+      "localizations": {
+        "zh-CN": {
+          "name": "扫雷",
+          "summary": "经典扫雷玩法，考验逻辑推理和风险判断能力。",
+          "tags": [
+            "益智",
+            "经典",
+            "单人"
+          ]
+        }
+      }
     },
     {
       "id": "com.bz.fruitninja",
-      "name": "水果忍者",
       "author": "BZ-Games Team",
       "author_url": "https://github.com/baozha2023",
       "type": "singleplayer",
-      "summary": "经典切水果玩法升级回归，新增生存模式和更炫酷的刀光表现。",
-      "tags": [
-        "休闲",
-        "动作",
-        "单人"
-      ],
       "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85/icon.png",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85/cover.png",
       "featured": true,
@@ -297,45 +365,62 @@
       "versions": [
         {
           "version": "1.0.0",
-          "description": "经典切水果游戏 - 新增难度、刀光皮肤等多种新功能！",
           "platformVersion": ">=1.1.0",
           "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85/v1.0.0/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85.zip",
           "sha256": "6c79abbb91a0b491d871c262b395ee7f82bc6e683ce6458dba7e57717f4c92aa",
           "size": 10735120,
-          "publishedAt": "2026-05-16T14:30:34.000Z"
+          "publishedAt": "2026-05-16T14:30:34Z",
+          "localizations": {
+            "zh-CN": {
+              "description": "经典切水果游戏 - 新增难度、刀光皮肤等多种新功能！"
+            }
+          }
         },
         {
           "version": "2.0.0",
-          "description": "经典切水果游戏 - 三种付费刀光全新特效震撼来袭！",
           "platformVersion": ">=1.2.0",
           "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85/v2.0.0/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85.zip",
           "sha256": "236fd294ba30d904afaad1b5a660056a5fc27b3dccba58d3ef95d9839ed00559",
           "size": 10768706,
-          "publishedAt": "2026-05-16T14:33:39.000Z"
+          "publishedAt": "2026-05-16T14:33:39Z",
+          "localizations": {
+            "zh-CN": {
+              "description": "经典切水果游戏 - 三种付费刀光全新特效震撼来袭！"
+            }
+          }
         },
         {
           "version": "3.0.0",
-          "description": "经典切水果游戏 -全新游戏界面！生存模式来袭！更炫酷刀光！",
           "platformVersion": ">=1.4.0",
           "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85/v3.0.0/%E6%B0%B4%E6%9E%9C%E5%BF%8D%E8%80%85.zip",
           "sha256": "156cd8fa6177de27995256a8eae9597d03a893cc0cf8e17a6548b4832e7f153a",
           "size": 21048745,
-          "publishedAt": "2026-05-16T14:38:36.000Z"
+          "publishedAt": "2026-05-16T14:38:36Z",
+          "localizations": {
+            "zh-CN": {
+              "description": "经典切水果游戏 -全新游戏界面！生存模式来袭！更炫酷刀光！"
+            }
+          }
         }
-      ]
+      ],
+      "defaultLocale": "zh-CN",
+      "localizations": {
+        "zh-CN": {
+          "name": "水果忍者",
+          "summary": "经典切水果玩法升级回归，新增生存模式和更炫酷的刀光表现。",
+          "tags": [
+            "休闲",
+            "动作",
+            "单人"
+          ]
+        }
+      }
     },
     {
       "id": "com.bz.connectfour",
-      "name": "四子棋",
       "author": "BZ-Games Team",
       "author_url": "https://github.com/baozha2023",
       "type": "multiplayer",
-      "summary": "经典四子棋联机对战，率先连成四子即可获胜。",
-      "tags": [
-        "棋牌",
-        "策略",
-        "联机"
-      ],
       "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E5%9B%9B%E5%AD%90%E6%A3%8B/icon.png",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E5%9B%9B%E5%AD%90%E6%A3%8B/cover.png",
       "featured": false,
@@ -346,27 +431,36 @@
       "versions": [
         {
           "version": "1.0.0",
-          "description": "经典四子棋游戏，联机对战，率先连成四子者获胜",
           "platformVersion": ">=1.4.0",
           "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E5%9B%9B%E5%AD%90%E6%A3%8B/v1.0.0/%E5%9B%9B%E5%AD%90%E6%A3%8B.zip",
           "sha256": "c21c8ef7a2122cfa1f8962bede4cdbbf2c23e3c735cdb8755b9f707256d548d1",
           "size": 2631413,
-          "publishedAt": "2026-05-17T07:53:16.000Z"
+          "publishedAt": "2026-05-17T07:53:16Z",
+          "localizations": {
+            "zh-CN": {
+              "description": "经典四子棋游戏，联机对战，率先连成四子者获胜"
+            }
+          }
         }
-      ]
+      ],
+      "defaultLocale": "zh-CN",
+      "localizations": {
+        "zh-CN": {
+          "name": "四子棋",
+          "summary": "经典四子棋联机对战，率先连成四子即可获胜。",
+          "tags": [
+            "棋牌",
+            "策略",
+            "联机"
+          ]
+        }
+      }
     },
     {
       "id": "com.bz.tankbattle",
-      "name": "坦克大战",
       "author": "BZ-Games Team",
       "author_url": "https://github.com/baozha2023",
       "type": "multiplayer",
-      "summary": "多人在线坦克对战，支持大厅、地图投票与多模式战斗结算。",
-      "tags": [
-        "射击",
-        "对战",
-        "多人"
-      ],
       "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98/icon.png",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98/cover.png",
       "featured": true,
@@ -377,45 +471,62 @@
       "versions": [
         {
           "version": "1.0.0",
-          "description": "多人在线坦克大战，支持大厅、地图投票与战斗结算流程",
           "platformVersion": ">=1.5.0",
           "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98/v1.0.0/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98.zip",
           "sha256": "50e6d210640a841388b843b1187fd9da2f4c2c29584bf63354309c40c3be9a24",
           "size": 58799114,
-          "publishedAt": "2026-05-16T14:47:31.000Z"
+          "publishedAt": "2026-05-16T14:47:31Z",
+          "localizations": {
+            "zh-CN": {
+              "description": "多人在线坦克大战，支持大厅、地图投票与战斗结算流程"
+            }
+          }
         },
         {
           "version": "2.0.0",
-          "description": "多人在线坦克大战，支持大厅、地图投票与战斗结算流程",
           "platformVersion": ">=1.5.0",
           "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98/v2.0.0/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98.zip",
           "sha256": "03893d525b9f2aa3330d223a8051b910c1299bf08677b1e4ac7f69870cd4d40b",
           "size": 77348745,
-          "publishedAt": "2026-05-16T14:57:41.000Z"
+          "publishedAt": "2026-05-16T14:57:41Z",
+          "localizations": {
+            "zh-CN": {
+              "description": "多人在线坦克大战，支持大厅、地图投票与战斗结算流程"
+            }
+          }
         },
         {
           "version": "2.5.0",
-          "description": "多人在线坦克大战，支持大厅、地图投票与战斗结算流程",
           "platformVersion": ">=2.3.7",
           "sha256": "c41c6cff0b7c0548e840ae8e14bd89bf3aac8a074e073ad8c486a480e92df215",
           "size": 77354199,
-          "publishedAt": "2026-06-13T04:35:28.000Z",
-          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98/v2.5.0/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98.zip"
+          "publishedAt": "2026-06-13T04:35:28Z",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98/v2.5.0/%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98.zip",
+          "localizations": {
+            "zh-CN": {
+              "description": "多人在线坦克大战，支持大厅、地图投票与战斗结算流程"
+            }
+          }
         }
-      ]
+      ],
+      "defaultLocale": "zh-CN",
+      "localizations": {
+        "zh-CN": {
+          "name": "坦克大战",
+          "summary": "多人在线坦克对战，支持大厅、地图投票与多模式战斗结算。",
+          "tags": [
+            "射击",
+            "对战",
+            "多人"
+          ]
+        }
+      }
     },
     {
       "id": "com.bz.sokoban",
-      "name": "推箱子",
       "author": "BZ-Games Team",
       "author_url": "https://github.com/baozha2023",
       "type": "singleplayer",
-      "summary": "经典推箱子闯关玩法，考验空间规划和路径思维。",
-      "tags": [
-        "益智",
-        "闯关",
-        "单人"
-      ],
       "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E6%8E%A8%E7%AE%B1%E5%AD%90/icon.png",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E6%8E%A8%E7%AE%B1%E5%AD%90/cover.png",
       "featured": false,
@@ -424,27 +535,36 @@
       "versions": [
         {
           "version": "1.0.0",
-          "description": "经典推箱子游戏 - 将所有箱子推到目标位置，考验你的空间思维能力！",
           "platformVersion": ">=1.4.0",
           "sha256": "d07433b4a19c04610211cbbc69b3fe367656a1bc4c67628a452d3edc5643c3ac",
           "size": 1988578,
-          "publishedAt": "2026-05-17T08:14:57.000Z",
-          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E6%8E%A8%E7%AE%B1%E5%AD%90/v1.0.0/%E6%8E%A8%E7%AE%B1%E5%AD%90.zip"
+          "publishedAt": "2026-05-17T08:14:57Z",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E6%8E%A8%E7%AE%B1%E5%AD%90/v1.0.0/%E6%8E%A8%E7%AE%B1%E5%AD%90.zip",
+          "localizations": {
+            "zh-CN": {
+              "description": "经典推箱子游戏 - 将所有箱子推到目标位置，考验你的空间思维能力！"
+            }
+          }
         }
-      ]
+      ],
+      "defaultLocale": "zh-CN",
+      "localizations": {
+        "zh-CN": {
+          "name": "推箱子",
+          "summary": "经典推箱子闯关玩法，考验空间规划和路径思维。",
+          "tags": [
+            "益智",
+            "闯关",
+            "单人"
+          ]
+        }
+      }
     },
     {
       "id": "com.bz.gomoku",
-      "name": "五子棋",
       "author": "BZ-Games Team",
       "author_url": "https://github.com/baozha2023",
       "type": "multiplayer",
-      "summary": "经典五子棋联机对战，黑白双方交替落子比拼策略。",
-      "tags": [
-        "棋牌",
-        "策略",
-        "联机"
-      ],
       "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BA%94%E5%AD%90%E6%A3%8B/icon.png",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BA%94%E5%AD%90%E6%A3%8B/cover.png",
       "featured": false,
@@ -455,27 +575,36 @@
       "versions": [
         {
           "version": "1.0.0",
-          "description": "经典五子棋游戏，黑白双方交替落子，先连成五子者获胜",
           "platformVersion": ">=1.2.0",
           "sha256": "64c20a50f20d52aeda16a210eef7571140c0b61bf1bd29d195294ced5922d96d",
           "size": 1473180,
-          "publishedAt": "2026-06-16T10:29:50.000Z",
-          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BA%94%E5%AD%90%E6%A3%8B/v1.0.0/%E4%BA%94%E5%AD%90%E6%A3%8B.zip"
+          "publishedAt": "2026-06-16T10:29:50Z",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BA%94%E5%AD%90%E6%A3%8B/v1.0.0/%E4%BA%94%E5%AD%90%E6%A3%8B.zip",
+          "localizations": {
+            "zh-CN": {
+              "description": "经典五子棋游戏，黑白双方交替落子，先连成五子者获胜"
+            }
+          }
         }
-      ]
+      ],
+      "defaultLocale": "zh-CN",
+      "localizations": {
+        "zh-CN": {
+          "name": "五子棋",
+          "summary": "经典五子棋联机对战，黑白双方交替落子比拼策略。",
+          "tags": [
+            "棋牌",
+            "策略",
+            "联机"
+          ]
+        }
+      }
     },
     {
       "id": "com.bz.gomokusingle",
-      "name": "五子棋（单机版）",
       "author": "BZ-Games Team",
       "author_url": "https://github.com/baozha2023",
       "type": "singleplayer",
-      "summary": "经典五子棋人机对战，新增究极模式并支持 AI 先手。",
-      "tags": [
-        "棋牌",
-        "人机",
-        "单人"
-      ],
       "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BA%94%E5%AD%90%E6%A3%8B%E5%8D%95%E6%9C%BA%E7%89%88/icon.png",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BA%94%E5%AD%90%E6%A3%8B%E5%8D%95%E6%9C%BA%E7%89%88/cover.png",
       "featured": false,
@@ -484,36 +613,49 @@
       "versions": [
         {
           "version": "1.0.0",
-          "description": "经典五子棋人机对战游戏，使用 AI 算法进行智能对局。支持三种难度选择，炫酷的动画效果让你享受棋盘上的乐趣！",
           "platformVersion": ">=1.3.0",
           "sha256": "1bebb2e93fbffae44ce6c6b3119baa8a1cda78e63e9628d4992a7f65cbed7e55",
           "size": 2133139,
-          "publishedAt": "2026-05-27T07:55:36.000Z",
-          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BA%94%E5%AD%90%E6%A3%8B%E5%8D%95%E6%9C%BA%E7%89%88/v1.0.0/%E4%BA%94%E5%AD%90%E6%A3%8B%E5%8D%95%E6%9C%BA%E7%89%88.zip"
+          "publishedAt": "2026-05-27T07:55:36Z",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BA%94%E5%AD%90%E6%A3%8B%E5%8D%95%E6%9C%BA%E7%89%88/v1.0.0/%E4%BA%94%E5%AD%90%E6%A3%8B%E5%8D%95%E6%9C%BA%E7%89%88.zip",
+          "localizations": {
+            "zh-CN": {
+              "description": "经典五子棋人机对战游戏，使用 AI 算法进行智能对局。支持三种难度选择，炫酷的动画效果让你享受棋盘上的乐趣！"
+            }
+          }
         },
         {
           "version": "2.0.0",
-          "description": "经典五子棋人机对战游戏。新增究极模式，支持AI先手",
           "platformVersion": ">=1.4.0",
           "sha256": "efac90f142ff7be8c24d752b397bdc29267b71dbb20409d17746cae0f9f15246",
           "size": 2145816,
-          "publishedAt": "2026-06-08T14:27:42.000Z",
-          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BA%94%E5%AD%90%E6%A3%8B%E5%8D%95%E6%9C%BA%E7%89%88/v2.0.0/%E4%BA%94%E5%AD%90%E6%A3%8B%E5%8D%95%E6%9C%BA%E7%89%88.zip"
+          "publishedAt": "2026-06-08T14:27:42Z",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BA%94%E5%AD%90%E6%A3%8B%E5%8D%95%E6%9C%BA%E7%89%88/v2.0.0/%E4%BA%94%E5%AD%90%E6%A3%8B%E5%8D%95%E6%9C%BA%E7%89%88.zip",
+          "localizations": {
+            "zh-CN": {
+              "description": "经典五子棋人机对战游戏。新增究极模式，支持AI先手"
+            }
+          }
         }
-      ]
+      ],
+      "defaultLocale": "zh-CN",
+      "localizations": {
+        "zh-CN": {
+          "name": "五子棋（单机版）",
+          "summary": "经典五子棋人机对战，新增究极模式并支持 AI 先手。",
+          "tags": [
+            "棋牌",
+            "人机",
+            "单人"
+          ]
+        }
+      }
     },
     {
       "id": "com.bz.element-match",
-      "name": "灵韵消消：元素纪元",
       "author": "BZ-Games Team",
       "author_url": "https://github.com/baozha2023",
       "type": "singleplayer",
-      "summary": "中国风玄幻主题消除玩法，融合五行元素反应与灵韵收集系统。",
-      "tags": [
-        "消除",
-        "国风",
-        "单人"
-      ],
       "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E7%81%B5%E9%9F%B5%E6%B6%88%E6%B6%88%EF%BC%9A%E5%85%83%E7%B4%A0%E7%BA%AA%E5%85%83/icon.png",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E7%81%B5%E9%9F%B5%E6%B6%88%E6%B6%88%EF%BC%9A%E5%85%83%E7%B4%A0%E7%BA%AA%E5%85%83/cover.png",
       "featured": true,
@@ -522,36 +664,49 @@
       "versions": [
         {
           "version": "1.0.0",
-          "description": "中国风玄幻主题消消乐，融合五行元素反应系统与灵韵收集玩法。",
           "platformVersion": ">=1.3.0",
           "sha256": "82e9c3a43cb083d1f7e74417d683bb915d8f5a5844382a9a8069b71a472667b4",
           "size": 35368949,
-          "publishedAt": "2026-05-19T14:28:35.000Z",
-          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E7%81%B5%E9%9F%B5%E6%B6%88%E6%B6%88%EF%BC%9A%E5%85%83%E7%B4%A0%E7%BA%AA%E5%85%83/v1.0.0/%E7%81%B5%E9%9F%B5%E6%B6%88%E6%B6%88%EF%BC%9A%E5%85%83%E7%B4%A0%E7%BA%AA%E5%85%83.zip"
+          "publishedAt": "2026-05-19T14:28:35Z",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E7%81%B5%E9%9F%B5%E6%B6%88%E6%B6%88%EF%BC%9A%E5%85%83%E7%B4%A0%E7%BA%AA%E5%85%83/v1.0.0/%E7%81%B5%E9%9F%B5%E6%B6%88%E6%B6%88%EF%BC%9A%E5%85%83%E7%B4%A0%E7%BA%AA%E5%85%83.zip",
+          "localizations": {
+            "zh-CN": {
+              "description": "中国风玄幻主题消消乐，融合五行元素反应系统与灵韵收集玩法。"
+            }
+          }
         },
         {
           "version": "2.0.0",
-          "description": "六元素十五种组合反应，冰封、藤蔓、灵雾三大障碍，五大外观主题与三种消除特效，四十五个精心设计的关卡加上无尽模式，搭配成就系统与灵韵商店，带来丰富多变的消除体验。",
           "platformVersion": ">=1.9.4",
           "sha256": "064117ce2ddff8ebdb4b8ce5199ea951950355c144c3d6b19abf375d1c375b19",
           "size": 73124392,
-          "publishedAt": "2026-05-22T04:21:02.000Z",
-          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E7%81%B5%E9%9F%B5%E6%B6%88%E6%B6%88%EF%BC%9A%E5%85%83%E7%B4%A0%E7%BA%AA%E5%85%83/v2.0.0/%E7%81%B5%E9%9F%B5%E6%B6%88%E6%B6%88%EF%BC%9A%E5%85%83%E7%B4%A0%E7%BA%AA%E5%85%83.zip"
+          "publishedAt": "2026-05-22T04:21:02Z",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E7%81%B5%E9%9F%B5%E6%B6%88%E6%B6%88%EF%BC%9A%E5%85%83%E7%B4%A0%E7%BA%AA%E5%85%83/v2.0.0/%E7%81%B5%E9%9F%B5%E6%B6%88%E6%B6%88%EF%BC%9A%E5%85%83%E7%B4%A0%E7%BA%AA%E5%85%83.zip",
+          "localizations": {
+            "zh-CN": {
+              "description": "六元素十五种组合反应，冰封、藤蔓、灵雾三大障碍，五大外观主题与三种消除特效，四十五个精心设计的关卡加上无尽模式，搭配成就系统与灵韵商店，带来丰富多变的消除体验。"
+            }
+          }
         }
-      ]
+      ],
+      "defaultLocale": "zh-CN",
+      "localizations": {
+        "zh-CN": {
+          "name": "灵韵消消：元素纪元",
+          "summary": "中国风玄幻主题消除玩法，融合五行元素反应与灵韵收集系统。",
+          "tags": [
+            "消除",
+            "国风",
+            "单人"
+          ]
+        }
+      }
     },
     {
       "id": "com.bz.xiangqi",
-      "name": "中国象棋",
       "author": "BZ-Games Team",
       "author_url": "https://github.com/baozha2023",
       "type": "multiplayer",
-      "summary": "经典中国象棋联机对战，红黑双方展开策略与智慧较量。",
-      "tags": [
-        "棋牌",
-        "策略",
-        "联机"
-      ],
       "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E4%B8%AD%E5%9B%BD%E8%B1%A1%E6%A3%8B/icon.png",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E4%B8%AD%E5%9B%BD%E8%B1%A1%E6%A3%8B/cover.png",
       "featured": false,
@@ -562,27 +717,36 @@
       "versions": [
         {
           "version": "1.0.0",
-          "description": "经典中国象棋游戏，红黑双方对战，策略与智慧的较量",
           "platformVersion": ">=1.4.0",
           "sha256": "f142066568d56bb06cfc76b91acfbd7c01103b33f81a978640a2b2de63b55994",
           "size": 5420186,
-          "publishedAt": "2026-05-20T03:51:49.000Z",
-          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%B8%AD%E5%9B%BD%E8%B1%A1%E6%A3%8B/v1.0.0/%E4%B8%AD%E5%9B%BD%E8%B1%A1%E6%A3%8B.zip"
+          "publishedAt": "2026-05-20T03:51:49Z",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%B8%AD%E5%9B%BD%E8%B1%A1%E6%A3%8B/v1.0.0/%E4%B8%AD%E5%9B%BD%E8%B1%A1%E6%A3%8B.zip",
+          "localizations": {
+            "zh-CN": {
+              "description": "经典中国象棋游戏，红黑双方对战，策略与智慧的较量"
+            }
+          }
         }
-      ]
+      ],
+      "defaultLocale": "zh-CN",
+      "localizations": {
+        "zh-CN": {
+          "name": "中国象棋",
+          "summary": "经典中国象棋联机对战，红黑双方展开策略与智慧较量。",
+          "tags": [
+            "棋牌",
+            "策略",
+            "联机"
+          ]
+        }
+      }
     },
     {
       "id": "com.bz.whackamole",
-      "name": "打地鼠",
       "author": "BZ-Games Team",
       "author_url": "https://github.com/baozha2023",
       "type": "singleplayer",
-      "summary": "经典打地鼠玩法，支持多种模式。",
-      "tags": [
-        "休闲",
-        "反应",
-        "联机"
-      ],
       "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%93%E5%9C%B0%E9%BC%A0/icon.png",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%93%E5%9C%B0%E9%BC%A0/cover.png",
       "featured": false,
@@ -591,27 +755,36 @@
       "versions": [
         {
           "version": "1.0.0",
-          "description": "经典打地鼠游戏 - 多种模式",
           "platformVersion": ">=1.6.0",
           "sha256": "e26b461c542e32eb118e2abe33483ab2992a5df3557fd994e063442818f37a83",
           "size": 28347486,
-          "publishedAt": "2026-06-02T06:12:59.000Z",
-          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%93%E5%9C%B0%E9%BC%A0/v1.0.0/%E6%89%93%E5%9C%B0%E9%BC%A0.zip"
+          "publishedAt": "2026-06-02T06:12:59Z",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E6%89%93%E5%9C%B0%E9%BC%A0/v1.0.0/%E6%89%93%E5%9C%B0%E9%BC%A0.zip",
+          "localizations": {
+            "zh-CN": {
+              "description": "经典打地鼠游戏 - 多种模式"
+            }
+          }
         }
-      ]
+      ],
+      "defaultLocale": "zh-CN",
+      "localizations": {
+        "zh-CN": {
+          "name": "打地鼠",
+          "summary": "经典打地鼠玩法，支持多种模式。",
+          "tags": [
+            "休闲",
+            "反应",
+            "联机"
+          ]
+        }
+      }
     },
     {
       "id": "com.bz.reversi",
-      "name": "黑白棋",
       "author": "BZ-Games Team",
       "author_url": "https://github.com/baozha2023",
       "type": "singlemultiple",
-      "summary": "经典黑白棋（Reversi/Othello），黑白双方轮流落子夹翻对手。支持双人对战与人机对战，多种AI难度。",
-      "tags": [
-        "棋牌",
-        "策略",
-        "双人"
-      ],
       "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E9%BB%91%E7%99%BD%E6%A3%8B/icon.png",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E9%BB%91%E7%99%BD%E6%A3%8B/cover.png",
       "featured": false,
@@ -622,28 +795,36 @@
       "versions": [
         {
           "version": "1.0.0",
-          "description": "经典黑白棋（Reversi/Othello）游戏，黑白双方轮流落子，夹住对方棋子即可翻转。支持双人对战与人机对战，多种AI难度可选。",
           "platformVersion": ">=2.1.0",
           "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E9%BB%91%E7%99%BD%E6%A3%8B/v1.0.0/%E9%BB%91%E7%99%BD%E6%A3%8B.zip",
           "sha256": "48a7eda61854287e1a35cc47416f5560890909b4d45cb84be77956949ccac8bb",
           "size": 6765429,
-          "publishedAt": "2026-06-03T04:00:38.000Z"
+          "publishedAt": "2026-06-03T04:00:38Z",
+          "localizations": {
+            "zh-CN": {
+              "description": "经典黑白棋（Reversi/Othello）游戏，黑白双方轮流落子，夹住对方棋子即可翻转。支持双人对战与人机对战，多种AI难度可选。"
+            }
+          }
         }
-      ]
+      ],
+      "defaultLocale": "zh-CN",
+      "localizations": {
+        "zh-CN": {
+          "name": "黑白棋",
+          "summary": "经典黑白棋（Reversi/Othello），黑白双方轮流落子夹翻对手。支持双人对战与人机对战，多种AI难度。",
+          "tags": [
+            "棋牌",
+            "策略",
+            "双人"
+          ]
+        }
+      }
     },
     {
       "id": "com.bz.drawguess",
-      "name": "你画我猜",
       "author": "BZ-Games Team",
       "author_url": "https://github.com/baozha2023",
       "type": "multiplayer",
-      "summary": "多人联机你画我猜游戏，一人作画众人猜词，支持 1~8 人同房竞技。",
-      "tags": [
-        "休闲",
-        "画画",
-        "多人",
-        "派对"
-      ],
       "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BD%A0%E7%94%BB%E6%88%91%E7%8C%9C/icon.jpg",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BD%A0%E7%94%BB%E6%88%91%E7%8C%9C/cover.jpg",
       "featured": false,
@@ -654,27 +835,37 @@
       "versions": [
         {
           "version": "1.0.0",
-          "description": "多人联机你画我猜游戏，一人作画众人猜词。支持 1~8 人同房、10 项成就与 9 项数据统计。",
           "platformVersion": ">=2.3.4",
           "sha256": "21ffa217bd03d73f585452fee40a55425a9efb6e0dac8c24e28cb211ee391913",
           "size": 150891249,
-          "publishedAt": "2026-06-13T15:35:09.000Z",
-          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BD%A0%E7%94%BB%E6%88%91%E7%8C%9C/v1.0.0/%E4%BD%A0%E7%94%BB%E6%88%91%E7%8C%9C.zip"
+          "publishedAt": "2026-06-13T15:35:09Z",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E4%BD%A0%E7%94%BB%E6%88%91%E7%8C%9C/v1.0.0/%E4%BD%A0%E7%94%BB%E6%88%91%E7%8C%9C.zip",
+          "localizations": {
+            "zh-CN": {
+              "description": "多人联机你画我猜游戏，一人作画众人猜词。支持 1~8 人同房、10 项成就与 9 项数据统计。"
+            }
+          }
         }
-      ]
+      ],
+      "defaultLocale": "zh-CN",
+      "localizations": {
+        "zh-CN": {
+          "name": "你画我猜",
+          "summary": "多人联机你画我猜游戏，一人作画众人猜词，支持 1~8 人同房竞技。",
+          "tags": [
+            "休闲",
+            "画画",
+            "多人",
+            "派对"
+          ]
+        }
+      }
     },
     {
       "id": "com.bz.checkers",
-      "name": "跳棋",
       "author": "BZ-Games Team",
       "author_url": "https://github.com/baozha2023",
       "type": "singlemultiple",
-      "summary": "经典跳棋联机对战，1~6 人轮流跳跃移动，最先将棋子全部跳到对面的玩家获胜。",
-      "tags": [
-        "棋牌",
-        "策略",
-        "联机"
-      ],
       "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E8%B7%B3%E6%A3%8B/icon.png",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E8%B7%B3%E6%A3%8B/cover.png",
       "featured": false,
@@ -685,29 +876,36 @@
       "versions": [
         {
           "version": "1.0.0",
-          "description": "经典跳棋联机对战 — 1~6 人轮流跳跃移动，最先将棋子全部跳到对面的玩家获胜！",
           "platformVersion": ">=2.3.7",
           "sha256": "7d79d82ae5bf6c228b4ed27f98600bdff619015393dfe45369042e668d7d1094",
           "size": 4319164,
-          "publishedAt": "2026-08-03T10:41:56.000Z",
-          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E8%B7%B3%E6%A3%8B/v1.0.0/%E8%B7%B3%E6%A3%8B.zip"
+          "publishedAt": "2026-08-03T10:41:56Z",
+          "downloadUrl": "http://cdn.bzgames.top/bz-games-market/%E8%B7%B3%E6%A3%8B/v1.0.0/%E8%B7%B3%E6%A3%8B.zip",
+          "localizations": {
+            "zh-CN": {
+              "description": "经典跳棋联机对战 — 1~6 人轮流跳跃移动，最先将棋子全部跳到对面的玩家获胜！"
+            }
+          }
         }
-      ]
+      ],
+      "defaultLocale": "zh-CN",
+      "localizations": {
+        "zh-CN": {
+          "name": "跳棋",
+          "summary": "经典跳棋联机对战，1~6 人轮流跳跃移动，最先将棋子全部跳到对面的玩家获胜。",
+          "tags": [
+            "棋牌",
+            "策略",
+            "联机"
+          ]
+        }
+      }
     },
     {
       "id": "com.bz.star-guardian",
-      "name": "星轨守望",
-      "tags": [
-        "塔防",
-        "动作",
-        "合作",
-        "科幻",
-        "联机"
-      ],
       "type": "singlemultiple",
       "author": "BZ-Games Team",
       "iconUrl": "http://cdn.bzgames.top/bz-games-market/%E6%98%9F%E8%BD%A8%E5%AE%88%E6%9C%9B/icon.png",
-      "summary": "旋转轨道护盾，守护星核，独自或与最多三名伙伴挑战无限陨石潮。",
       "coverUrl": "http://cdn.bzgames.top/bz-games-market/%E6%98%9F%E8%BD%A8%E5%AE%88%E6%9C%9B/cover.png",
       "featured": true,
       "maxPlayers": 4,
@@ -717,28 +915,38 @@
       "versions": [
         {
           "version": "1.0.0",
-          "description": "旋转轨道护盾，守护星核 — 独自或与最多三名伙伴挑战无限陨石潮！",
-          "publishedAt": "2026-08-08T18:51:09.000Z",
+          "publishedAt": "2026-08-08T18:51:09Z",
           "platformVersion": ">=3.1.0",
           "downloadUrl": "games.bzgames.top/com.bz.star-guardian/1.0.0/package/%E6%98%9F%E8%BD%A8%E5%AE%88%E6%9C%9B.zip",
           "sha256": "8b4a06ca05c95a396c9bd197a32794eb974f90a530c4e79487a71378e36f0c6b",
-          "size": 4869835
+          "size": 4869835,
+          "localizations": {
+            "zh-CN": {
+              "description": "旋转轨道护盾，守护星核 — 独自或与最多三名伙伴挑战无限陨石潮！"
+            }
+          }
         }
-      ]
+      ],
+      "defaultLocale": "zh-CN",
+      "localizations": {
+        "zh-CN": {
+          "name": "星轨守望",
+          "summary": "旋转轨道护盾，守护星核，独自或与最多三名伙伴挑战无限陨石潮。",
+          "tags": [
+            "塔防",
+            "动作",
+            "合作",
+            "科幻",
+            "联机"
+          ]
+        }
+      }
     },
     {
       "id": "com.bz.jump3d",
-      "name": "云端疾跃",
-      "tags": [
-        "3D",
-        "多人",
-        "跑酷",
-        "竞速"
-      ],
       "type": "singlemultiple",
       "author": "BZ-Games Team",
       "iconUrl": "games.bzgames.top/com.bz.jump3d/1.0.0/icon/icon.png",
-      "summary": "第一人称云端跑酷：用鼠标观察、WASD 移动、空格跳跃，独自训练或与最多三位伙伴实时竞速。",
       "coverUrl": "games.bzgames.top/com.bz.jump3d/1.0.0/cover/cover.png",
       "featured": true,
       "maxPlayers": 4,
@@ -748,50 +956,80 @@
       "versions": [
         {
           "version": "2.0.0",
-          "description": "第一人称云端竞速全面升级，新增回声深渊、浮空迷宫、相位天梯三大模式，收录七种差异化玩法；支持最多四人实时联机，加入攻击、碰撞、二段跳、迷宫探索与动态相位挑战，新增精致服装、背饰与帽子搭配系统，更完整的成就统计。",
-          "publishedAt": "2026-08-21T16:27:00.000Z",
+          "publishedAt": "2026-08-21T16:27:00Z",
           "platformVersion": ">=3.2.3",
           "downloadUrl": "games.bzgames.top/com.bz.jump3d/2.0.0/package/%E8%B7%B3%E4%B8%80%E8%B7%B33D.zip",
           "sha256": "4bc4574c5db5cf87e2c024f8bcd60b67b6772b5af8511b371ff6d81876be35a9",
-          "size": 46322299
+          "size": 46322299,
+          "localizations": {
+            "zh-CN": {
+              "description": "第一人称云端竞速全面升级，新增回声深渊、浮空迷宫、相位天梯三大模式，收录七种差异化玩法；支持最多四人实时联机，加入攻击、碰撞、二段跳、迷宫探索与动态相位挑战，新增精致服装、背饰与帽子搭配系统，更完整的成就统计。"
+            }
+          }
         },
         {
           "version": "1.0.0",
-          "description": "第一人称云端跑酷，鼠标观察、WASD 移动、空格跳跃，收录云端疾跃、蓄力跳、蜂窝迷图、极限冲刺四大模式，支持单人训练与最多四人实时联机竞速，含 15 项成就与完整统计。",
-          "publishedAt": "2026-08-16T17:27:06.000Z",
+          "publishedAt": "2026-08-16T17:27:06Z",
           "platformVersion": ">=3.1.0",
           "downloadUrl": "games.bzgames.top/com.bz.jump3d/1.0.0/package/%E8%B7%B3%E4%B8%80%E8%B7%B33D.zip",
           "sha256": "cbaaf64cb8257884d71d8226211167865935bfa5bdaa7f56655b6a51fde8c9d0",
-          "size": 33523674
+          "size": 33523674,
+          "localizations": {
+            "zh-CN": {
+              "description": "第一人称云端跑酷，鼠标观察、WASD 移动、空格跳跃，收录云端疾跃、蓄力跳、蜂窝迷图、极限冲刺四大模式，支持单人训练与最多四人实时联机竞速，含 15 项成就与完整统计。"
+            }
+          }
         }
-      ]
+      ],
+      "defaultLocale": "zh-CN",
+      "localizations": {
+        "zh-CN": {
+          "name": "云端疾跃",
+          "summary": "第一人称云端跑酷：用鼠标观察、WASD 移动、空格跳跃，独自训练或与最多三位伙伴实时竞速。",
+          "tags": [
+            "3D",
+            "多人",
+            "跑酷",
+            "竞速"
+          ]
+        }
+      }
     },
     {
       "id": "com.bz.oneline",
-      "name": "一笔到底",
-      "tags": [
-        "益智",
-        "解谜",
-        "思维"
-      ],
       "type": "singleplayer",
       "author": "BZ-Games Team",
       "iconUrl": "games.bzgames.top/com.bz.oneline/1.0.0/icon/icon.png",
-      "summary": "一笔画完所有边的欧拉路径解谜小游戏：拖动连线，每条边只能走一次，从起点一笔到底！",
       "coverUrl": "games.bzgames.top/com.bz.oneline/1.0.0/cover/cover.png",
       "visibility": "public",
       "latestVersion": "1.0.0",
       "versions": [
         {
           "version": "1.0.0",
-          "description": "《一笔到底》是一款主打欧拉路径（一笔画）的休闲益智小游戏。在由节点与连线构成的图形中，拖动手指或鼠标，让每一笔都不重复、不遗漏，从起点一气呵成连到终点。游戏内置 40 个精心设计的关卡，难度循序渐进，并配有\"无路可走\"提示与一键重来，随时来一局烧脑放松。",
-          "publishedAt": "2026-08-18T07:22:10.000Z",
+          "publishedAt": "2026-08-18T07:22:10Z",
           "platformVersion": ">=3.1.0",
           "downloadUrl": "games.bzgames.top/com.bz.oneline/1.0.0/package/%E4%B8%80%E7%AC%94%E5%88%B0%E5%BA%95.zip",
           "sha256": "764bc410d96bc6147c9223668c5a0a75a68169007378e71be50bad980c489e6d",
-          "size": 5963323
+          "size": 5963323,
+          "localizations": {
+            "zh-CN": {
+              "description": "《一笔到底》是一款主打欧拉路径（一笔画）的休闲益智小游戏。在由节点与连线构成的图形中，拖动手指或鼠标，让每一笔都不重复、不遗漏，从起点一气呵成连到终点。游戏内置 40 个精心设计的关卡，难度循序渐进，并配有\"无路可走\"提示与一键重来，随时来一局烧脑放松。"
+            }
+          }
         }
-      ]
+      ],
+      "defaultLocale": "zh-CN",
+      "localizations": {
+        "zh-CN": {
+          "name": "一笔到底",
+          "summary": "一笔画完所有边的欧拉路径解谜小游戏：拖动连线，每条边只能走一次，从起点一笔到底！",
+          "tags": [
+            "益智",
+            "解谜",
+            "思维"
+          ]
+        }
+      }
     }
   ]
 }
