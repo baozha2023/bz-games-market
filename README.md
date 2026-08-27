@@ -1,39 +1,58 @@
 # BZ Games Market
 
-游戏市场索引仓库，为 [BZ Games](https://github.com/baozha2023/bz-games) 平台提供游戏下载目录。
+BZ-Games 官方游戏市场索引仓库，为 [BZ-Games](https://github.com/baozha2023/bz-games) 客户端提供官方市场、外部市场目录和游戏下载元数据。
+
+客户端只接受严格数值 `schemaVersion: 2`。Schema 1.x、字符串版本、缺失版本或包含旧字段结构的索引均不会被兼容解析。
 
 ## 文件结构
 
-```
+```text
 bz-games-market/
-├── market.json          # 市场索引（唯一必需提交的配置文件）
-├── get-zip-meta.py      # 工具脚本：获取 zip 的 sha256 和 size
-├── .gitignore
-├── .github/workflows/   # GitHub Actions：推送后自动同步到 OSS
-└── README.md
+├─ market.json          # 官方目录与官方市场索引
+├─ get-zip-meta.py      # 计算安装包 SHA-256 和字节数
+├─ .github/workflows/   # 推送后同步 market.json 到 OSS
+└─ README.md
 ```
 
-## market.json 结构
+## 官方市场的语言政策
 
-### 顶层结构（市场目录）
-
-`market.json` 位于仓库根目录，作为**市场目录文件**，描述可用的市场源列表，同时包含当前仓库自身的游戏列表。
+官方市场目前只维护默认简体中文：
 
 ```json
 {
-  "schemaVersion": "1.0.0",
+  "defaultLocale": "zh-CN",
+  "localizations": {
+    "zh-CN": {
+      "name": "示例游戏",
+      "summary": "中文简介",
+      "tags": ["单人"]
+    }
+  }
+}
+```
+
+不要在官方市场中添加空的、机器占位的其他语言包。第三方市场和 GitHub Release 市场维护完整的五种语言：`zh-CN`、`zh-TW`、`en-US`、`ja-JP`、`de-DE`。
+
+客户端请求的语言未在某个游戏中声明时，会把游戏名称、摘要、标签、版本描述和更新说明整体回退到该游戏的 `defaultLocale`，不会逐字段混合语言。
+
+## 顶层结构
+
+官方 `market.json` 是唯一同时包含市场目录 `sources` 和官方游戏索引 `games` 的文档：
+
+```json
+{
+  "schemaVersion": 2,
   "marketId": "official",
   "marketName": "BZ Games Market",
-  "generatedAt": "2026-05-22T04:21:02.000Z",
-  "updatedAt": "2026-06-16T10:32:44.000Z",
+  "generatedAt": "2026-05-15T12:00:00Z",
+  "updatedAt": "2026-08-26T13:31:41.932Z",
   "repository": "https://github.com/baozha2023/bz-games-market.git",
   "author": "baozha2023",
   "sources": [
     {
       "marketId": "official",
       "marketName": "BZ Games Market",
-      "coverUrl": "http://cdn.bzgames.top/bz-games-market/cover.png",
-      "generatedAt": "2026-05-22T04:21:02.000Z",
+      "generatedAt": "2026-05-15T12:00:00Z",
       "repository": "https://github.com/baozha2023/bz-games-market.git",
       "branch": "master",
       "featured": true,
@@ -44,203 +63,202 @@ bz-games-market/
 }
 ```
 
-> **注意**：每次更新 `market.json` 后，需同步更新 `generatedAt` 和 `updatedAt` 为当前 UTC 时间。
->
-> `sources` 数组和 `games` 数组**共存于同一文件**：平台通过 `MarketDirectorySchema` 解析 `sources` 展示市场列表（一级界面），通过
-`MarketIndexSchema` 解析 `games` 展示该市场的游戏（二级界面）。
+| 字段            | 类型             | 必填 | 说明                                                          |
+| :-------------- | :--------------- | :--- | :------------------------------------------------------------ |
+| `schemaVersion` | number           | 是   | 必须精确为数值 `2`                                            |
+| `marketId`      | string           | 是   | 官方市场稳定 ID，必须与 `sources` 中恰好一个同 ID source 关联 |
+| `marketName`    | string           | 是   | 市场显示名称，不参与本地化                                    |
+| `generatedAt`   | ISO-8601 string  | 是   | 市场首次生成时间，普通内容更新时保持不变                      |
+| `updatedAt`     | ISO-8601 string  | 是   | 本次索引内容更新时间，修改游戏或版本后更新为当前 UTC 时间     |
+| `repository`    | HTTPS GitHub URL | 否   | 当前市场仓库地址                                              |
+| `author`        | string           | 否   | 市场维护者                                                    |
+| `sources`       | Source[]         | 是   | 市场目录，至少包含官方市场且 `marketId` 全局唯一              |
+| `games`         | Game[]           | 是   | 官方市场游戏列表                                              |
 
-### 顶层字段
+更新规则：只更新 `updatedAt`；不要因为编辑游戏、版本或 source 而修改 `generatedAt`。
 
-| 字段              | 类型       | 必填 | 说明                                    |
-|-----------------|----------|----|---------------------------------------|
-| `schemaVersion` | string   | 是  | 索引格式版本，如 `"1.0.0"`                    |
-| `marketId`      | string   | 是  | 当前市场的唯一标识（与 `sources[0].marketId` 一致） |
-| `marketName`    | string   | 是  | 当前市场的显示名称                             |
-| `generatedAt`   | string   | 是  | 索引生成时间（ISO 8601），首次创建时填写                    |
-| `updatedAt`     | string   | 是  | 索引最后更新时间（ISO 8601），每次更新需刷新                  |
-| `repository`    | string   | 否  | 该市场的 GitHub 仓库地址                                  |
-| `author`        | string   | 否  | 该市场的维护作者                                          |
-| `sources`       | Source[] | 是  | 市场源列表，至少 1 项                                     |
-| `games`         | Game[]   | 是  | 游戏列表（与 `sources[0]` 对应）                          |
+## Source 结构
 
-### Source 字段（sources 数组元素）
+```json
+{
+  "marketId": "third-party",
+  "marketName": "Third-party-market",
+  "coverUrl": "http://cdn.bzgames.top/bz-games-third-party-market/cover.png",
+  "generatedAt": "2026-05-27T08:00:00Z",
+  "repository": "https://github.com/baozha2023/bz-games-third-party-market.git",
+  "branch": "master",
+  "featured": true,
+  "visibility": "public"
+}
+```
 
-每个 source 代表一个独立的市场仓库，平台一级界面展示所有 source。
+| 字段          | 类型                 | 必填 | 说明                                                           |
+| :------------ | :------------------- | :--- | :------------------------------------------------------------- |
+| `marketId`    | string               | 是   | 稳定市场 ID；路由、IPC、安装任务、任务恢复和论坛引用均使用此值 |
+| `marketName`  | string               | 是   | 市场显示名称，不参与本地化                                     |
+| `coverUrl`    | URL                  | 否   | 市场封面                                                       |
+| `generatedAt` | ISO-8601 string      | 是   | 该市场首次生成时间                                             |
+| `repository`  | HTTPS GitHub URL     | 是   | 只接受规范的 GitHub 仓库地址                                   |
+| `branch`      | string               | 是   | Git 分支名                                                     |
+| `featured`    | boolean              | 否   | 是否重点展示                                                   |
+| `visibility`  | `public` \| `hidden` | 否   | source 可见性                                                  |
 
-| 字段            | 类型      | 必填 | 说明                                                               |
-|---------------|---------|----|------------------------------------------------------------------|
-| `marketId`    | string  | 是  | 市场唯一标识                                                           |
-| `marketName`  | string  | 是  | 市场显示名称                                                           |
-| `coverUrl`    | string  | 否  | 市场封面图远程地址，建议 HTTPS，用于一级界面卡片展示                                    |
-| `generatedAt` | string  | 是  | 该市场索引的生成时间（ISO 8601）                                             |
-| `repository`  | string  | 是  | GitHub 仓库地址（仅支持 GitHub），如 `https://github.com/user/repo.git`     |
-| `branch`      | string  | 是  | 仓库分支，如 `master` 或 `main`                                         |
-| `featured`    | boolean | 否  | 是否在市场列表重点推荐                                                      |
-| `visibility`  | string  | 否  | 可见性：`public` / `hidden`（默认 `public`，`hidden` 的 source 不在市场列表中展示） |
+禁止使用数组下标识别市场，也不存在 `sourceIdx` 兼容逻辑。`marketId` 必须唯一且长期稳定。
 
-### Game 字段
+## Game Schema 2
 
-| 字段              | 类型        | 必填 | 说明                                                                   |
-|-----------------|-----------|----|----------------------------------------------------------------------|
-| `id`            | string    | 是  | 唯一标识，反向域名格式，如 `com.bz.gamename`。**必须与安装包内 `game.json.id` 完全一致**      |
-| `name`          | string    | 是  | 游戏名称，最长 100 字符                                                       |
-| `author`        | string    | 是  | 作者/工作室名称                                                             |
-| `author_url`    | string    | 否  | 作者主页链接，在详情页展开时作者名称旁显示跳转图标                                            |
-| `type`          | string    | 是  | 类型：`singleplayer` / `multiplayer` / `singlemultiple` / `networkgame` |
-| `summary`       | string    | 是  | 简要介绍，最多 200 字符                                                       |
-| `tags`          | string[]  | 否  | 标签列表，用于市场内搜索                                                         |
-| `iconUrl`       | string    | 否  | 图标远程地址，建议 HTTPS。未配置时显示"暂无图片"                                         |
-| `coverUrl`      | string    | 否  | 封面远程地址，建议 16:9 比例。未配置时显示"暂无图片"                                       |
-| `screenshots`   | string[]  | 否  | 详情页截图 URL 列表                                                         |
-| `featured`      | boolean   | 否  | 是否在市场首页重点推荐                                                          |
-| `visibility`    | string    | 否  | 可见性：`public` / `hidden` / `deprecated`（默认 `public`）                  |
-| `minPlayers`    | number    | 否  | 多人游戏最小人数（仅 `multiplayer` / `singlemultiple` 建议填写）                    |
-| `maxPlayers`    | number    | 否  | 多人游戏最大人数                                                             |
-| `latestVersion` | string    | 是  | 当前推荐展示/安装的最新稳定版本号（`X.Y.Z` 格式）                                        |
-| `versions`      | Version[] | 是  | 版本列表，至少 1 项                                                          |
+```json
+{
+  "id": "com.bz.example",
+  "defaultLocale": "zh-CN",
+  "localizations": {
+    "zh-CN": {
+      "name": "示例游戏",
+      "summary": "游戏简介",
+      "tags": ["益智", "单人"]
+    }
+  },
+  "author": "BZ-Games Team",
+  "author_url": "https://github.com/baozha2023",
+  "type": "singleplayer",
+  "iconUrl": "https://example.com/icon.png",
+  "coverUrl": "https://example.com/cover.png",
+  "screenshots": ["https://example.com/screenshot.png"],
+  "featured": false,
+  "visibility": "public",
+  "latestVersion": "1.0.0",
+  "versions": []
+}
+```
 
-### Version 字段
+| 字段                        | 必填 | 说明                                                             |
+| :-------------------------- | :--- | :--------------------------------------------------------------- |
+| `id`                        | 是   | 反向域名格式的稳定游戏 ID，必须与安装后 Manifest 一致            |
+| `defaultLocale`             | 是   | 默认语言，必须存在于 `localizations`                             |
+| `localizations`             | 是   | 游戏语言包；每种语言必须完整提供 `name`、`summary`、`tags`       |
+| `author`                    | 是   | 作者或工作室，不参与本地化                                       |
+| `author_url`                | 否   | 作者主页                                                         |
+| `type`                      | 是   | `singleplayer`、`multiplayer`、`singlemultiple` 或 `networkgame` |
+| `iconUrl` / `coverUrl`      | 否   | HTTP(S) 或平台托管资源地址                                       |
+| `screenshots`               | 否   | HTTPS 截图列表                                                   |
+| `featured`                  | 否   | 是否重点展示                                                     |
+| `visibility`                | 否   | `public`、`hidden` 或 `deprecated`                               |
+| `minPlayers` / `maxPlayers` | 否   | 多人游戏人数范围                                                 |
+| `latestVersion`             | 是   | 必须引用 `versions` 中存在的稳定版本                             |
+| `versions`                  | 是   | 至少一个版本                                                     |
 
-| 字段                | 类型      | 必填 | 说明                                                                        |
-|-------------------|---------|----|---------------------------------------------------------------------------|
-| `version`         | string  | 是  | 版本号，格式 `X.Y.Z`。**必须与安装包内 `game.json.version` 完全一致**                       |
-| `description`     | string  | 是  | 该版本描述（列表与详情页展示）                                                           |
-| `platformVersion` | string  | 是  | 平台兼容版本，使用 `semver` 语法，如 `>=1.9.4`                                         |
-| `downloadUrl`     | string  | 是  | 下载地址（支持 `.zip` 和 `.7z` 格式，平台根据后缀自动识别）                                     |
-| `sha256`          | string  | 否  | 文件 SHA-256 校验值（64 位 hex，大小写不敏感）。可省略，省略时跳过下载后的完整性校验                        |
-| `size`            | number  | 否  | 文件大小（字节），用于展示下载体积与二次校验。可省略，省略时跳过大小校验；但对于 GitHub Releases 直链，平台会自动从 API 获取 |
-| `publishedAt`     | string  | 否  | 发布时间（ISO 8601），如 `"2024-01-15T08:00:00.000Z"`                             |
-| `releaseNotes`    | string  | 否  | 详细更新说明                                                                    |
-| `isPrerelease`    | boolean | 否  | 是否为预发布版本；预发布版本不作为 `latestVersion`                                         |
-| `gameManifest`    | object  | 否  | 游戏的 `game.json` 清单覆盖配置，用于无 `game.json` 的第三方游戏适配（详见下方说明）                   |
+`name`、`summary` 和 `tags` 不允许继续出现在 Game 顶层。标签也是本地化内容，市场展示与搜索使用当前语言投影后的标签。
 
-> **完整性校验**：若 `sha256` 和 `size` 均缺失，该版本将被标记为"版本异常"并禁止下载。仅缺失其一则允许下载，但缺失项将跳过校验。对于
-> GitHub Releases 直链（格式
-`https://github.com/{owner}/{repo}/releases/download/{tag}/{asset}`），平台会在下载前通过 GitHub REST API 自动获取 `size
-`。`sha256` 是否可用取决于 GitHub 是否在上传时提供了 `digest`（仅 Actions 上传的 asset 会包含此字段）。
-
-## 平台校验规则
-
-平台下载安装时会进行以下校验，**任一失败则拒绝安装**：
-
-| 校验项            | 方式                                                                                               | 错误码                         |
-|----------------|--------------------------------------------------------------------------------------------------|-----------------------------|
-| 平台版本兼容         | 当前平台版本必须满足 `platformVersion`（`semver.satisfies`）                                                 | `platform_version_mismatch` |
-| 本地已安装          | 检查本地 `gameRecord` 中是否已存在相同 `id + version`                                                        | `already_installed`         |
-| 下载完整性          | 比对下载文件 `sha256` 与索引中的值                                                                           | `verify`                    |
-| 文件大小           | 比对下载文件 `size` 与索引中的值                                                                             | `verify`                    |
-| 解压结构           | 根目录或第一层单子目录中必须存在 `game.json`；若无，则需在对应版本的 `gameManifest` 字段中配置，平台将自动生成 `game.json`                | `extract`                   |
-| Manifest ID/版本 | `game.json.id`、`game.json.version` 必须与索引一致                                                       | `install`                   |
-| Manifest 平台兼容  | `game.json.platformVersion` 使用 `semver` 做语义化兼容性检查（支持 string 和 tuple `[min, max]` 两种格式），不做字符串直接比对 | `install`                   |
-
-## 安装包约束
-
-- **格式**：支持 `.zip` 和 `.7z`，平台根据 `downloadUrl` 后缀自动识别。`.zip` 使用 `extract-zip`（纯 Node.js）解压，`.7z` 使用内置
-  `7za` 二进制解压
-- **结构**：解压后根目录或第一层单子目录中应包含 `game.json`；平台会自动穿透单层嵌套目录。若无 `game.json`，可在对应版本的
-  `gameManifest` 字段中配置，平台将自动生成
-- **安全**：压缩包内不得出现绝对路径、盘符路径或 `../` 路径穿越条目
-- **目录命名**：压缩包解压后的目录结构应能直接作为普通"本地导入"的输入目录
-- **幂等性**：若本地已存在相同 `id + version`，视为已安装，不重复覆盖
-
-### 第三方游戏适配（无 `game.json`）
-
-部分第三方游戏压缩包内不包含 `game.json` 文件。为适配此类游戏，可在对应版本的 `gameManifest` 字段中配置所需的清单信息，平台安装时会自动生成
-`game.json`。
-
-> **规则**：若解压后不存在 `game.json` 且对应版本的 `gameManifest` 也未配置，则安装失败，提示"该游戏异常，安装失败"
-> ，并自动清除下载的游戏文件。
-
-`gameManifest` 包含 `game.json` 中除 `id`（由 Market Game 的 `id` 提供）和 `version`（由当前 Version 的 `version`
-提供）之外的所有字段，**均为可选**。未配置的字段将按以下优先级自动回退：
-
-| `gameManifest` 字段 | 回退来源（当未配置时）                    |
-|-------------------|--------------------------------|
-| `name`            | Market Game 的 `name`           |
-| `author`          | Market Game 的 `author`         |
-| `author_url`      | Market Game 的 `author_url`     |
-| `type`            | Market Game 的 `type`           |
-| `description`     | Market Game 的 `summary`        |
-| `platformVersion` | 当前 Version 的 `platformVersion` |
-| `entry`           | 无回退来源，自动检测目录中的入口文件；若无法检测则安装失败  |
-
-`gameManifest` 完整字段列表（均为可选）：
-
-| 字段                    | 类型                        | 说明                                                 |
-|-----------------------|---------------------------|----------------------------------------------------|
-| `name`                | string                    | 游戏显示名称                                             |
-| `description`         | string                    | 游戏描述                                               |
-| `author`              | string                    | 作者/工作室名称                                           |
-| `author_url`          | string                    | 作者主页链接                                             |
-| `platformVersion`     | string / [string, string] | 平台兼容版本范围                                           |
-| `entry`               | string                    | 启动入口文件或模式（如 `index.html`、`game.exe`、`serve`、`url`） |
-| `web_url`             | string                    | `entry=url` 时的远程网页地址                               |
-| `icon`                | string                    | 图标文件路径（相对于游戏根目录）                                   |
-| `cover`               | string                    | 封面文件路径                                             |
-| `video`               | string                    | 预览视频文件路径                                           |
-| `encryptLocalStorage` | boolean                   | 是否加密本地存储                                           |
-| `windowedFullscreen`  | boolean                   | 仅 Web 游戏可用；启动时自动最大化窗口，默认 `false`，用户仍可还原窗口             |
-| `type`                | string                    | 游戏类型，同 Market Game 的 `type`                        |
-| `statistics`          | array                     | 统计指标列表                                             |
-| `multiplayer`         | object                    | 多人游戏配置 `{minPlayers, maxPlayers}`                  |
-| `args`                | string[]                  | 仅 Native 游戏可用的启动参数                              |
-| `env`                 | object                    | 仅 Native 游戏可用的环境变量                              |
-| `achievements`        | array                     | 成就列表定义                                             |
-
-**示例**：一个没有 `game.json` 的第三方游戏版本配置：
+## Version Schema 2
 
 ```json
 {
   "version": "1.0.0",
-  "description": "经典消除游戏",
-  "platformVersion": ">=1.0.0",
-  "downloadUrl": "http://cdn.bzgames.top/bz-games-market/match3/v1.0.0/game.zip",
-  "sha256": "a1b2c3d4e5f6...",
-  "size": 5242880,
-  "publishedAt": "2026-05-15T12:00:00.000Z",
-  "gameManifest": {
-    "entry": "index.html",
-    "icon": "icon.png"
+  "platformVersion": ">=4.0.0",
+  "downloadUrl": "https://example.com/game.zip",
+  "sha256": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+  "size": 123456,
+  "publishedAt": "2026-08-26T00:00:00.000Z",
+  "localizations": {
+    "zh-CN": {
+      "description": "首个版本",
+      "releaseNotes": "首次发布"
+    }
+  },
+  "isPrerelease": false
+}
+```
+
+| 字段              | 必填   | 说明                                                                                      |
+| :---------------- | :----- | :---------------------------------------------------------------------------------------- |
+| `version`         | 是     | SemVer 版本，必须与最终 Manifest 一致                                                     |
+| `platformVersion` | 是     | 客户端 SemVer 范围                                                                        |
+| `downloadUrl`     | 通常是 | HTTP(S) 或平台托管安装包地址；仅 manifest-only 网络游戏可省略                             |
+| `sha256`          | 否     | 64 位十六进制 SHA-256，强烈建议填写                                                       |
+| `size`            | 是     | 安装包字节数；GitHub Release 直链可由平台解析                                             |
+| `publishedAt`     | 否     | 发布时间                                                                                  |
+| `localizations`   | 是     | 必须与所属 Game 使用完全相同的语言集合；每种语言提供 `description`，可提供 `releaseNotes` |
+| `isPrerelease`    | 否     | 预发布标记                                                                                |
+| `gameManifest`    | 否     | 从市场数据重新生成 `game.json` 的 Manifest override                                       |
+
+`description` 和 `releaseNotes` 不允许继续出现在 Version 顶层。
+
+## Game Manifest V1/V2
+
+未填写 `gameManifest` 时，平台读取安装包中原有的 `game.json`：
+
+- 精确数值 `manifestVersion: 2` 按 Manifest V2 严格解析。
+- 未声明或不等于数值 2 时按长期保留的 Manifest V1 解析。
+
+填写 `gameManifest` 时，平台不会覆盖或合并安装包中的旧文件，而是：
+
+1. 删除解压暂存目录内原有的 `game.json`；
+2. 根据市场 Game、Version 和 `gameManifest` 从零构造新 Manifest；
+3. 使用完整 Manifest Schema 校验；
+4. 加密新 `game.json` 后导入游戏库。
+
+平台解析层允许 V1/V2 override；本仓库新增 override 时统一使用 Manifest V2，并显式填写：
+
+```json
+{
+  "manifestVersion": 2,
+  "entry": "index.html"
+}
+```
+
+V2 override 自动从市场 `localizations` 注入每种语言的游戏名和简介。若声明成就或统计，还必须在 override 的每种语言包中完整提供对应稳定 ID 的显示文本。
+
+```json
+{
+  "manifestVersion": 2,
+  "entry": "game.exe",
+  "statistics": [{ "id": "score", "mode": "full" }],
+  "achievements": [{ "id": "first_win", "icon": "first-win.png" }],
+  "localizations": {
+    "zh-CN": {
+      "statistics": { "score": "得分" },
+      "achievements": {
+        "first_win": {
+          "title": "初次胜利",
+          "description": "完成第一局游戏"
+        }
+      }
+    }
   }
 }
 ```
 
-> 此配置中，`name`、`author`、`type` 等字段将从 Market Game 层级自动继承，无需重复填写。
+## 安装包与校验
 
-## 市场加载策略
+- 安装包使用 `.zip` 或 `.7z`。
+- 未填写 `gameManifest` 时，压缩包根目录或唯一第一层目录必须包含合法的 V1/V2 `game.json`。
+- 填写 `gameManifest` 时，原有 `game.json` 会被删除，不会透传未声明字段。
+- Manifest 的 `id`、`version` 和 `platformVersion` 必须与市场元数据及当前客户端匹配。
+- 安装前校验大小和可用的 SHA-256；解压时拒绝绝对路径、盘符路径和路径穿越。
+- 同一 `id + version` 已安装时拒绝重复安装；`networkgame` 同一 ID 只能安装一个版本。
 
-平台采用**两级市场架构**：
+可使用工具生成完整性元数据：
 
-### 一级：市场列表
+```powershell
+python get-zip-meta.py <安装包路径>
+```
 
-平台启动后进入"游戏市场"页面时，加载顶层 `market.json` 解析 `sources` 数组，展示所有可用的市场源。用户点击任意市场进入其游戏列表。
+## 市场加载与隐藏规则
 
-### 二级：游戏列表
+- 客户端优先从 OSS 获取官方 `market.json`，失败后整体切换到 GitHub；不会混用两个来源的目录和官方索引。
+- 官方目录和官方索引来自同一次响应，并按索引 `marketId` 查找同 ID source；目录顺序不承载业务身份。
+- 外部市场通过 source 的 `repository + branch` 获取 `market.json`，但业务身份始终是稳定 `marketId`。
+- 可达但 `schemaVersion !== 2`、结构无效或 `marketId` 不匹配的外部市场会被隐藏。
+- 网络失败或超时不会被当成旧协议，source 保留并允许用户重试。
+- 原始市场索引按稳定 source 身份缓存；客户端切换语言时只重新生成本地化投影，不重新下载市场。
 
-进入具体市场后，平台从该市场对应仓库的 `market.json` 拉取游戏索引。第 0 号 source（即顶层 `market.json` 自身）直接使用同文件的
-`games` 字段。
+## 提交前检查
 
-### 主备双源
-
-顶层 `market.json` 加载采用主备策略：
-
-1. **主源**（优先级最高）：`https://raw.githubusercontent.com/baozha2023/bz-games-market/master/market.json`
-2. **备用源**（主源失败时回退）：`https://web-bz.oss-cn-beijing.aliyuncs.com/market.json`
-
-外部市场源的 `market.json` 从其仓库的 raw
-地址直接加载（`https://raw.githubusercontent.com/{owner}/{repo}/{branch}/market.json`）。
-
-### 缓存策略
-
-- 顶层市场列表和市场索引均有 1 小时内存缓存
-- 缓存不落盘，应用重启后自动失效
-- 用户可点击"刷新"按钮强制拉取最新数据
-
-## 游戏类型说明
-
-| 类型               | 说明                                       |
-|------------------|------------------------------------------|
-| `singleplayer`   | 单人游戏，不支持联机                               |
-| `multiplayer`    | 纯多人游戏，必须联机游玩                             |
-| `singlemultiple` | 同时支持单人与联机模式                              |
-| `networkgame`    | 网页游戏（`entry=url`），平台直接打开远程网页地址，不参与房间联机流程 |
+- `schemaVersion` 是数值 `2`。
+- `generatedAt` 保持首次生成时间，只刷新 `updatedAt`。
+- 所有 `marketId` 唯一，且存在与官方索引同 ID 的 source；不得依赖 source 数组顺序。
+- 官方游戏只声明完整 `zh-CN`；每个版本使用相同语言集合。
+- Game 顶层没有 `name`、`summary`、`tags`；Version 顶层没有 `description`、`releaseNotes`。
+- `latestVersion` 指向实际版本，下载地址、SHA-256 和 size 与文件一致。
+- 新增 `gameManifest` override 使用精确数值 `manifestVersion: 2`。
+- 不修改游戏安装包内既有的 Manifest V1；平台仍会正常解析。
