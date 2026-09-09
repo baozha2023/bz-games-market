@@ -213,7 +213,9 @@ V2 override 自动从市场 `localizations` 注入每种语言的游戏名和简
   "manifestVersion": 2,
   "entry": "game.exe",
   "statistics": [{ "id": "score", "mode": "full" }],
-  "achievements": [{ "id": "first_win", "icon": "first-win.png" }],
+  "achievements": [
+    { "id": "first_win", "icon": "first-win.png", "hidden": true }
+  ],
   "localizations": {
     "zh-CN": {
       "statistics": { "score": "得分" },
@@ -227,6 +229,8 @@ V2 override 自动从市场 `localizations` 注入每种语言的游戏名和简
   }
 }
 ```
+
+V2 成就定义可声明可选布尔字段 `hidden`，省略时默认为 `false`。`hidden: true` 的成就在解锁前由平台显示默认奖杯，并按本地化标题和描述的 Unicode 字素簇逐个替换为问号（保留空白，Emoji 与组合字符各计一个）；解锁后再显示真实文案与可选图标。隐藏成就仍计入总数和进度，官方市场管理端提供“隐藏成就”开关，Relay 会拒绝非布尔值。
 
 ## 安装包与校验
 
@@ -261,4 +265,5 @@ python get-zip-meta.py <安装包路径>
 - Game 顶层没有 `name`、`summary`、`tags`；Version 顶层没有 `description`、`releaseNotes`。
 - `latestVersion` 指向实际版本，下载地址、SHA-256 和 size 与文件一致。
 - 新增 `gameManifest` override 使用精确数值 `manifestVersion: 2`。
+- 隐藏成就仅在 V2 稳定定义中使用布尔字段 `hidden`，不放入语言包。
 - 不修改游戏安装包内既有的 Manifest V1；平台仍会正常解析。
