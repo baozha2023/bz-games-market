@@ -3,7 +3,7 @@
   "marketId": "official",
   "marketName": "BZ Games Market",
   "generatedAt": "2026-05-15T12:00:00Z",
-  "updatedAt": "2026-08-26T13:31:41.932Z",
+  "updatedAt": "2026-09-26T13:13:28.000Z",
   "repository": "https://github.com/baozha2023/bz-games-market.git",
   "author": "baozha2023",
   "sources": [
@@ -1041,6 +1041,94 @@
           "downloadUrl": "games.bzgames.top/com.bz.oneline/1.0.0/package/%E4%B8%80%E7%AC%94%E5%88%B0%E5%BA%95.zip",
           "sha256": "764bc410d96bc6147c9223668c5a0a75a68169007378e71be50bad980c489e6d",
           "size": 5963323
+        }
+      ]
+    },
+    {
+      "id": "com.bz.go",
+      "type": "singlemultiple",
+      "author": "BZ-Games Team",
+      "iconUrl": "games.bzgames.top/com.bz.go/1.0.0/icon/icon.png",
+      "coverUrl": "games.bzgames.top/com.bz.go/1.0.0/cover/cover.png",
+      "author_url": "https://github.com/baozha2023",
+      "maxPlayers": 2,
+      "minPlayers": 2,
+      "visibility": "public",
+      "defaultLocale": "zh-CN",
+      "localizations": {
+        "de-DE": {
+          "name": "Go",
+          "tags": [
+            "Karten- und Brettspiele",
+            "Strategie",
+            "Online"
+          ],
+          "summary": "Ein elegantes Go-Brettspiel mit Unterstützung für lokales 2-Spieler-Spiel und BZ-Games Online-Mehrspieler."
+        },
+        "en-US": {
+          "name": "Go",
+          "tags": [
+            "Chess and Cards",
+            "Strategy",
+            "Online"
+          ],
+          "summary": "An elegant Go (Weiqi / Baduk) board game supporting local 2-player and BZ-Games online multiplayer."
+        },
+        "ja-JP": {
+          "name": "囲碁",
+          "tags": [
+            "8/5000",
+            "カードゲーム",
+            "戦略",
+            "オンライン"
+          ],
+          "summary": "洗練されたデザインの囲碁対局ゲーム。1台での2人対局および BZ-Games オンライン対戦に対応。"
+        },
+        "zh-CN": {
+          "name": "围棋",
+          "tags": [
+            "棋牌",
+            "策略",
+            "联机"
+          ],
+          "summary": "一款简洁雅致的围棋对弈游戏，支持同屏双人和 BZ-Games 双机联机对战。"
+        },
+        "zh-TW": {
+          "name": "圍棋",
+          "tags": [
+            "棋牌",
+            "策略",
+            "聯機"
+          ],
+          "summary": "一款簡潔雅致的圍棋對弈遊戲，支援同屏雙人與 BZ-Games 雙機連線對戰。"
+        }
+      },
+      "latestVersion": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishedAt": "2026-09-26T13:13:28.000Z",
+          "localizations": {
+            "de-DE": {
+              "description": "Ein elegantes Go-Brettspiel mit Unterstützung für lokales 2-Spieler-Spiel und BZ-Games Online-Mehrspieler."
+            },
+            "en-US": {
+              "description": "An elegant Go (Weiqi / Baduk) board game supporting local 2-player and BZ-Games online multiplayer."
+            },
+            "ja-JP": {
+              "description": "洗練されたデザインの囲碁対局ゲーム。1台での2人対局および BZ-Games オンライン対戦に対応。"
+            },
+            "zh-CN": {
+              "description": "一款简洁雅致的围棋对弈游戏，支持同屏双人和 BZ-Games 双机联机对战。"
+            },
+            "zh-TW": {
+              "description": "一款簡潔雅致的圍棋對弈遊戲，支援同屏雙人與 BZ-Games 雙機連線對戰。"
+            }
+          },
+          "platformVersion": ">=4.0.0",
+          "downloadUrl": "games.bzgames.top/com.bz.go/1.0.0/package/%E5%9B%B4%E6%A3%8B.zip",
+          "sha256": "336ff08d3a7af8cd90bf5280fa6e8a4b922f6818425b005a00cc6ce7ab96ef21",
+          "size": 8380601
         }
       ]
     }
